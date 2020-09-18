@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------------------------
+Vagrant
+
+box setting
+provider setting
+network setting
+folder setting
+provision setting
+
+vagrant up
+vagrent suspend
+vagrant resume
+vagrant reload
+vagrant ssh 
+vagrant destroy
+
+
+apt-get install -y anything_to_install
+
+--------------------------------------------------------------------------------------------------
