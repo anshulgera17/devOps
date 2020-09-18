@@ -1,3 +1,7 @@
+What is docker ?
+
+What is containarization ?
+
 Docker installation in ec2 ubuntu instance 
 
 Go to this link and run commands:-

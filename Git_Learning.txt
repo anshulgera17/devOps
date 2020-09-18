@@ -1,3 +1,9 @@
+What is SCM ?
+
+What is Git ?
+
+
+
 For Git Configuration in ec2 instance 
 Create a repo folder 
 $ Mkdir repo 

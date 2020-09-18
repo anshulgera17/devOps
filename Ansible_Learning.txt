@@ -1,9 +1,10 @@
-Ansible is a IT automation, configuration management and provisioning tool.
-Agentless
-Built on python.
-Uses ssh for secure connection
-Follow push based architecture for sending configurations.
-Very easy and fast to setup, minimal requirements.
+What is Ansible 
+    Ansible is a IT automation, configuration management and provisioning tool.
+    Agentless
+    Built on python.
+    Uses ssh for secure connection
+    Follow push based architecture for sending configurations.
+    Very easy and fast to setup, minimal requirements.
  
 Puppet and chef are pull based.
 Ansible is push based.

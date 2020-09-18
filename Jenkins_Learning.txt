@@ -1,3 +1,9 @@
+What is Jenkins ?
+
+
+What is CI-CD ?
+
+
 LearningJenkins
 --------------------------------------------------------------------------------------------------------------------------
 Blue ocean aggregator plugin in jenkins for generate pipeline code

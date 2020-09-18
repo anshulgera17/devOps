@@ -1,3 +1,7 @@
+What is Terraform ?
+
+
+
 sudo curl -O https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip
 sudo apt-get install unzip
 sudo mkdir /bin/terraform 
@@ -150,6 +154,6 @@ output “container_name”
 {
 value = “${module.container.container_name}”
 }
--------------------------------------------------------------------------------------------------------------------------------
+
 
 
