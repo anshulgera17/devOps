@@ -1,0 +1,90 @@
+YAML
+YAML (YAML Ain't Markup Language) is a human-readable data serialization language. It is commonly used for configuration files, but could be used in many applications where data is being stored (e.g. debugging output) or transmitted (e.g. document headers). YAML targets many of the same communications applications as XML but has a minimal syntax which intentionally breaks compatibility with SGML .[1] It uses both Python-style indentation to indicate nesting, and a more compact format that uses [] for lists and {} for maps making YAML a superset of JSON.
+----------------------------------------------------------------------
+# for the comment
+
+Key value pair:
+--------------
+Fruit: Apple 
+Vegetable: Carrot
+
+Array/Lists
+---------------
+Fruits:
+-	Orange
+-	Apple
+-	Banana
+
+Vegetables:
+-	Carrot
+-	Cauliflower
+-	Tomato
+------------------------------------------------
+Dictionary/Map
+------------------
+Banana:
+	Calories: 105
+	Fat: 0.4 g
+	Carbs: 27 g
+Grapes:
+	Calories: 62
+	Fat: 0.3 g
+	Carbs: 16 g
+--------------------------------------------------------------------------------------------------
+key value pairs
+ mapping 
+ sequences
+ scalars
+ structure
+ comments
+ tags  (!)
+     default datatypes
+        seq - Sequences
+        map - Map
+        str - String
+        int - Integer
+        float - Floating-point decimal
+        null - Null
+        binary - Binary code
+        omap - Ordered map
+        set - Unoredered set
+  anchors (& *)      
+-------------------------------------------------------------------------------------------------------------------------------- 
+#first comment
+%TAG ! tag:hostdata:phl:
+
+---
+host: medx-1
+datacentre: 
+  location: !PHL hyd   # In line comment
+  cab: !!str 13 
+  cab_unit: !!str 3
+  
+roles: &wphost
+  - webserver
+  - wp_database
+
+downtime_sch: |
+  2018-12-30 - comments
+  these are comments
+comments: > 
+  this is also a comment
+  how to comment.
+  
+---
+host: medx-2
+datacentre: 
+  location: pune  
+  cab: "13" 
+  cab_unit: '4'
+  
+roles: *wphost
+...
+---
+host: medx-3
+datacentre: 
+  location: ban  
+  cab: "13" 
+  cab_unit: '5'
+...
+
