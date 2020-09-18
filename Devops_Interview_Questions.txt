@@ -1,0 +1,130 @@
+Linux questions
+what is SSH port forwarding ?
+
+for checking the crontab file command is crontab -l
+1. how to check the current kernal version ? 
+uname -a
+
+2. how to check the current ip address ? 
+ifconfig 
+ip addr show 
+ip addr show eth0
+
+3. how do you check free disk space?
+df -ah
+
+4. How do manage service ?
+service serviceName status/start/stop
+systemctl status serviceName
+
+5. How would you check the size of a directory's contents on disk ?
+du -sh directoryName
+
+6.How would you check for open ports on a linux machine?
+sudo netstat -tulpn
+
+7.   How do you check CPU usage for a process?
+ps aux | grep processName
+top
+htop
+
+8. Dealing with mounts
+ls /mnt
+mount /dev/sda2 /mnt
+mount
+
+9. How do you look up something you don't know ?
+man <command>
+
+
+Deployment Questions:
+what is a blue-green deployment ?
+How do you do a hot deployment ?
+what is your rollback strategy ?
+Have you used jenkins for deployment ?
+what jenkins plugin have you used ?
+have you ever used user data for deployment ?
+
+AWS questions:
+What is VPC ?
+What is difference between public and private subnet ?
+What is reserved instance ?
+What is difference between spot instance and reserved instance ?
+What is cloud formation ?
+Have you used Route 53 ?
+What is the best feature of AWS which you like ?
+
+Configuration management questions:
+Which configuration management tool have you used ?
+What is difference between CHEF and Ansible?
+Have you written any Cookbook/Modules/Playbook ?
+
+Production support related question:
+What is the biggest issue you have faced in a production environment ?
+What is your DR strategy in Live website ?
+How do you scale a production web service ?
+--------------------------------------------------------------------------------------------------------------------------------
+ 
+This information will also be used to generate list of devops skills that will make their way to Nextport.
+ 
+1.       General skills
+a.       Programming
+                                   i.            Interpreted languages like Ruby, Python
+                                   ii.           Compiled languages like Go, Java, Groovy
+                                   iii.          Scripting and DSLs like bash, Jenkins DSL
+                                   iv.           Build managers like MVN, Gradle, Bundle, PyInstaller
+b.       Networking
+                                   i.            Routing, DNS, VPN setup, load balancers, dhcp
+                                   ii.           Firewall/security such as setting up packe or stateful filters, SNAT, DNAT, NAT, proxies, SSL/TLS
+                                   iii.          Debugging, tcpdump, traceroute, ngrep, iperf, nmap, snort, port mirroring
+                                   iv.           More advance topics like:
+1.       multicast, unicast, dhcp proxies, vlans,trunking,  bonds, bridges, LACP, LAGG, tunnels, GRE, sockets, spanning, store-and-forward
+c.       System Administration
+                                   i.            Different operating systems (kernel, shell, init, sysctls, package managers sys calls and signals, run-levels)
+                                   ii.           Security (roles, permissions, etc.)
+                                   iii.          SSH Server and Agent, forward, reverse, dynamic proxies, etc
+d.       Security
+                                   i.            SSO/Oauth
+                                   ii.           Ldap, Active Directory, rfc2307bis related schema standards
+                                   iii.          Key and secrets management (e.g., Vault, Chef Databags)
+                                   iv.           SSL transactions, Chain of Trust, GPG, Ciphers (AES, Blowfish, etc)
+2.       CI/CD and build tools
+a.       GitOps and IaaC patterns/tools
+b.       Jenkins:
+                                   i.            how to standup and configure
+                                   ii.           how to make jobs and pipelines, multistage builds
+                                   iii.          best practices (ie, testing, artifact management, reporting, ...)
+                                   iv.           Jenkinsfiles, Jenkins API, Jenkins X
+                                   v.            Jenkins DSL
+                                   vi.           Customized groovy applications that run in Jenkins JVM allowed by Script Security
+1.       FreeStyleProject and Hudson classes and methods
+c.       One of Chef/Ansible/ Salt/Puppet/etc.
+                                   i.             configuration, provisioning, etc
+                                   ii.            For categories that are primarily yaml can you write custom resources in python or ruby to avoid hacky config DSL?
+                                   iii.           Integrations with other tools, like Terraform
+3.       Docker
+a.       basic concepts and dockerfile syntax/components - hosts the container is called docker, components- daemon, client, registries, objects, namespaces and control groups.
+b.       best practices (secrets management, size of containers, speed of image builds, security) - Use a .dockerignore file.
+                                                                                                    Containers should be immutable & ephemeral. 
+                                                                                                    Minimize the number of layers / Consolidate instructions. 
+                                                                                                    Avoid installing unnecessary packages. 
+                                                                                                    Sort multi-line arguments. 
+                                                                                                    Build cache. 
+                                                                                                    Build every time. 
+c.       Draft, Skaffold, other tools … list please
+
+4.       Kubernetes/Orchestration
+a.       setup a cluster or hybrid environment, or used managed services from cloud providers - Having working experience to setup hybrid environment and used Amazon EKS 
+b.       basic concepts and k8s components - The Kubernetes master runs the Scheduler, Controller Manager, API Server and etcd components and is responsible for managing the Kubernetes cluster. 
+c.       Patterns: custom resources, stateful vs stateless systems, networking, security, secrets, ... - replication controller, rescheduling pods, scaling pods
+d.       Helm and other related tools in the space (lots of project that cover many services needed for containers) - 
+e.       Tools tied to scaling, monitoring, reliability, logging, etc... - Kubelet, cAdvisor, Kube-state-metrics, kubernetes Dashboard, Prometheus, Jaeger, Kubewatch, Weave Scope, The EFK Stack 
+
+5.       Public and or Private Cloud
+a.       different cloud technologies (VM/container management, managed databases/queues/alerting/etc., networking concepts, security/IAM, etc.) ... please list provider and resource
+b.       config as code: Terraform or equivalent (Cloudformation, etc) - Having work experience in terraform and cloudformation templates. 
+c.       multi-cloud/hybrid setups (setup VPN, DNS, VPC pairing …) - Having work experience in setup VPN, DNS, VPC pairing setup.
+ 
+ 
+If you have any other relevant skill that where not captured above please add them freeform.
+

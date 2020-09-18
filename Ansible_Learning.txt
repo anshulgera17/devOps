@@ -1,0 +1,262 @@
+Ansible is a IT automation, configuration management and provisioning tool.
+Agentless
+Built on python.
+Uses ssh for secure connection
+Follow push based architecture for sending configurations.
+Very easy and fast to setup, minimal requirements.
+ 
+Puppet and chef are pull based.
+Ansible is push based.
+Salt is both push and pull based.
+--------------------------------------------------------------------------------------------------
+Comment in ansible #
+--------------------------------------------------------------------------------------------------
+Ansible installation commands for ubuntu
+
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+$ sudo apt-get install ansible
+--------------------------------------------------------------------------------------------------
+Check the current version
+
+$ ansible --version
+$ ansible-playbook --version
+$ ansible-galaxy --version
+--------------------------------------------------------------------------------------------------
+$ ansible --list-hosts all
+$ sudo vi /etc/ansible/hosts
+--------------------------------------------------------------------------------------------------
+Inventory forms -- 1.simple static 2. Dynamic inventory 
+Can crete your oun inventory e.g. dev
+$ ansible -i dev --list-hosts all
+--------------------------------------------------------------------------------------------------
+Both are same 
+$ ansible --list-hosts all
+$ ansible --list-hosts “*”
+
+--------------------------------------------------------------------------------------------------
+File for check the global configuration  of ansible , and we can create ansible.cfg in local repo it will work and inside the file 
+[defaults]
+$ inventory = ./dev
+$ sudo vi /etc/ansible/ansible.cfg 
+--------------------------------------------------------------------------------------------------
+
+
+Can write the individual host name or group name 
+$ ansible --list-hosts webserver
+$ ansible --list-hosts db01
+Can use wildcard for hosts name
+$ ansible --list-hosts “db0*”
+Can use : for multiple target group
+$ ansible --list-hosts database:control
+Can use ! for not belong to the particular group
+$ ansible --list-hosts \!control
+
+
+--------------------------------------------------------------------------------------------------
+Simple Tasks 
+$ ansible -m ping all
+$ ansible -m command -a “hostname” all
+In ansible modules are idempotent.
+--------------------------------------------------------------------------------------------------
+Take care of
+1. packages required 
+2. Service handlers
+	Upstart, system descriptor, status of the service, 
+3. Files and folders need to create, file permissions, IP tables and firewall.
+4. Config file for that service.
+--------------------------------------------------------------------------------------------------
+Check the module index in ansible website
+State 
+present - check it is installed, if not then install
+Latest - while running playlist check the latest version and install it.
+Absent - delete the package if installed.
+Update_cache is similar to “apt get update” or installer update.
+
+Become: true - means that using “sudo” command, can use as task level or hole playbook at once. 
+
+With_items - is use for run multiple task in 1 loop, its similar to loop.  
+And use {{ item }} in jinja syntax.
+Jinja is a templating language in python
+
+Service module
+ State=started, check the state is running if not, start the service .
+           state=restarted, restart the service
+           state=stoped, stop the service
+enabled=yes,  if any reload or restart it will start the service.
+--------------------------------------------------------------------------------------------------
+Template - Managing configurations of multiple servers and environments are one of the significant uses of Ansible. But these configuration files may vary for each remote servers or each cluster. But apart from some few parameters, all other settings will be same.
+Creating static files for each of these configurations is not an efficient solution. And It will take a lot more time and every time a new cluster is added you will have to add more files. So if there is an efficient way to manage these dynamic values it would be beneficial. This is where Ansible template modules come into play.
+A template in Ansible is a file which contains all your configuration parameters, but the dynamic values are given as variables. During the playbook execution, depending on the conditions like which cluster you are using, the variables will be replaced with the relevant values.
+You can do much more than replacing the variables though, with the help of Jinj2 templating engine. You can have conditional statements, loops, write macros, filters for transforming the data, do arithmetic calculations, etc.
+The template files will usually have the .j2 extension, which denotes the Jinja2 templating engine used.
+The variables in a template file will be denoted by the double curly braces, ‘{{ variables }}’.
+example:
+.j2 for jinja 2 .
+Upstream deom {
+ {% for server in groups.webserver %}
+    Server {{ server }}
+{% endfor %}
+}
+
+Server {
+Listen 80;
+Location / {
+	Proxy_pass http://demo;
+   }
+}
+-------------------------------------------------------------------------------------------------- 
+Handlers: Running Operations On Change
+As we’ve mentioned, modules should be idempotent and can relay when they have made a change on the remote system. Playbooks recognize this and have a basic event system that can be used to respond to change.
+These ‘notify’ actions are triggered at the end of each block of tasks in a play, and will only be triggered once even if notified by multiple different tasks.
+For instance, multiple resources may indicate that apache needs to be restarted because they have changed a config file, but apache will only be bounced once to avoid unnecessary restarts.
+--------------------------------------------------------------------------------------------------
+Lineinfile module
+Can use for port is listening or not on all servers.
+
+Wait_for module use for check that port is listening or not on particular application
+State: drained 
+	Stopped
+	Started
+--------------------------------------------------------------------------------------------------
+Create roles folder and run the below command then it will create folder structure
+$ ansible-galaxy init control 
+$ ansible-galaxy init nginx
+$ ansible-galaxy init apache2 
+$ ansible-galaxy init ----------
+--------------------------------------------------------------------------------------------------
+Site.yml - inside this file write the names of the files with “include” keyword for execute playbook from roles.
+$ ansible-playbook site.yml - run this playbook and all configuration done using this file.  
+--------------------------------------------------------------------------------------------------
+$ ansible -m setup hostname
+It shows the variable setup for the particular host
+--------------------------------------------------------------------------------------------------
+Default values like username and password we can pass in defaults folder main.yml file and can use anywhere. E.g {{db_name}}
+---
+db_name: demo
+--------------------------------------------------------------------------------------------------
+Variable precedence search in ansible documentation(search precedence for vars in documentation)
+Role defaults (lowest priority)
+Extra vars -e key value pair (highest priority)
+
+We can pass vars many places like in playbook, play, include, and vars folder 
+--------------------------------------------------------------------------------------------------
+with_dict : sites 
+And sites are defined in defaults folder
+And access those dict use item.key
+We can use it for removing the process those are not required on the server.
+ 
+--------------------------------------------------------------------------------------------------
+Group_vars : In all.yml mention the variables required in whole configuration. These variables are global. But this is not best practice we should encrypt our variables like username and password. 
+--------------------------------------------------------------------------------------------------
+Vault : use for encrypt variables 
+$ touch group_vars/all/vars 
+$ ansible-vault create vault
+$ ansible-vault edit vault
+And use the password  for encrypt this file. 
+And you can observe that vault file will create automatically.
+
+Now you cannot use ansible playbook directly it require passphrase
+$ ansible-playbook --ask-vault-pass 
+
+Or you can write that password in your system in particular file and use that file and you can lock the file so you can only see the file 
+$ chmod 0600 !$ ---- for lock the file 
+And you can mention this file (passphrase file) for not writing again and again in the ansible.cfg file.
+
+Ansible vault is support 1 vault password during a execution
+--------------------------------------------------------------------------------------------------
+ Ansible Galaxy - galaxy.ansible.com
+If somebody already created the application configuration that you required then you can download and use with little bit modification from ansible galaxy.
+
+Check the role use time and rating of the role, then it is a stable role.
+--------------------------------------------------------------------------------------------------
+For speed up the playbook execution :
+Remove the facts gathering 
+gather_facts: false  ---in playbooks 
+--------------------------------------------------------------------------------------------------
+    2. Cache valid time :
+        Like apt is updated so many times so we can reduce the updates using in site.yml 
+        tasks:
+       name: update apt cache
+	       apt : update_cache=yes cache_valid_time=86400
+        Then remove “update_cache=yes” from all other tasks.
+	
+--------------------------------------------------------------------------------------------------
+3. Use TAGS for the run particular section of the yml file 
+tags: [ ‘packages’ ]
+$ ansible-playbook site.yml --tags “packages”
+ 
+For run except that particular tag
+$ ansible-playbook site.yml --skip-tags “packages”
+--------------------------------------------------------------------------------------------------
+4. Whatever is changed is recorded and displayed at last of the playbook execution, is someting good, or failed, so we can get the status when we want using changed_when. 
+So if something not changed then it won’t give anything about changed.
+
+changed_when: false changed_when: “active.stdout_lines != sites.keys()” 
+--------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------- 
+Use for execute the playbook step by step.
+$ ansible-playbook site.yml --step  
+--------------------------------------------------------------------------------------------------
+$ ansible-playbook site.yml --list-tasks
+$ ansible-playbook site.yml --start-at-task “name of the task”
+--------------------------------------------------------------------------------------------------
+Sometimes the playbook execution is failed to few hosts then it create a file /home/ansible/site.retry
+So for run playbook only on failde hosts 
+$ ansible-playbook --limit @/home/ansible/site.retry
+--------------------------------------------------------------------------------------------------
+Check the syntax of the ansible playbook
+$ ansible-playbook --syntax-check site.yml
+--------------------------------------------------------------------------------------------------
+Before execution of playbook you can check what is going to update and get the status
+$ ansible-playbook --check site.yml
+--------------------------------------------------------------------------------------------------
+Use -debug module in playbook check more details in debug documentation
+
+--------------------------------------------------------------------------------------------------
+ $ ansible all -s -n shell -a ‘uptime’
+ $ ansible all -s -n shell -a ‘date’
+ $ ansible all -s -n shell -a ‘cat /etc/redhat-release’
+ $ ansible all -s -n shell -a ‘mount’
+ $ ansible all -s -n shell -a ‘service sshd status’
+--------------------------------------------------------------------------------------------------
+
+Ansible playbook
+-------------------- 
+run series of commands on servers 
+Playbook - A single YAML file
+Play - Defines a set of activities(tasks) to be run on hosts
+Task - An action to be performed on the host
+	Execute a command 
+	Run a script 
+	Install a package
+	Shutdown/restart
+hosts : localhost 	--defines in play level, any number of hosts
+tasks: 
+
+"-" -> item in the list 
+	each play is a dictionary --> dictionary is an unordered collection.
+
+	tasks is list --> list are ordered collection.
+
+hosts name must be defined in inventory file 
+
+Module: different actions run by task is module
+
+---
+- hosts: webserver (hosts key in playbook is a target pattern)
+  tasks:
+   - name: Installs nginx web server
+     apt: pkg=nginx state=installed update_cache=true
+     notify:
+       -start nginx
+handlers:
+   - name: start nginx
+     service:name=nginx state=started
+
+     For execute this playbook 
+$ ansible-playbook file.yml
+
+----------------------------------------------------------------------
+
