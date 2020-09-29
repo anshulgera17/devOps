@@ -1,3 +1,38 @@
+Sailpoint interview questions
+----------------------------------------------------------
+slash 24 in subnet
+docker mysql and application - what docker provides for this
+terraform state file
+jenkins freestyle and pipeline job
+ci-cd workflow
+-----------------------------------------------------------
+Guavus Interview Questions:
+--------------------------------------------------
+How to debug if i am unable to create file in Linux
+how to debug memory issue in linux
+what is ELK stack, how you can explain to your manager
+------------------------------------------------------
+Hey, this is Anshul Gera, 
+Currently i am working for Evertz Microsystems as Project Engineer from past 3 years
+Projects called AMC DR and HBO LATAM and currently now i am working for Disney UK project
+
+most of the time work is related to JavaScript(RhinoJS), python scripting, shell scripting and basic networking, configuration of projects, installation of new version of OS with evertz packages files and make them working according to requirement, then migration of system from Mediator 8 to Mediator X as they are moving to DevOps, sometimes SQL queries as client need reports
+
+aws cloudformation templates, salt master and minion, ansible, learned ansible and wrote few playbooks in that and use different modules of ansible and we have multiple servers to implement so use ansible inventory 
+
+I implemented jenkins job for different teams once with docker containers and give them proper documented guide how to use it so then they are handling it(CI-CD)
+
+recently implemented elastic search kibana dashboard with aws s3 and ec2 servers so client can see the graphs and observe server performance and logs (ELK)
+
+Disney UK:
+
+here also environment is hybrid but they are very fastly moving to cloud and recently we did subtltes and in AWS s3, and simultaneously migrating few rhinoJS scripts to python 
+
+and here most of the time spent in resoilving support tickets and their chnage requests as disney UK is the most complicated project in evertz
+
+after my engg. from RIT Indore did CDAC diploma in "Advance Computing" from Sunbeam Pune, during this diploma i leanred various coding languages like SQL, C, CPP, Java, and others , and did my project in Advance Java  
+-------------------------------------------------------------------------------------------------------------------------------
+
 Linux questions
 what is SSH port forwarding ?
 
