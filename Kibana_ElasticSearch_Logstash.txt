@@ -1,9 +1,6 @@
 What is ELK ?
 
-
 What is Elastic search and Kibana ?
-
-
 
 Download elastic search in windows
 Download Kibana in windows

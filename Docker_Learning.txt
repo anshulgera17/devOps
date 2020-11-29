@@ -1,6 +1,8 @@
 What is docker ?
-
+    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
+    
 What is containarization ?
+    Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
 
 Docker installation in ec2 ubuntu instance 
 
@@ -73,7 +75,6 @@ FROM python
 ADD my_script.py /home/ubuntu/my_docker_build/my_script.py
 CMD [ "python", "/home/ubuntu/my_docker_build/my_script.py" ]
 
-
 sudo docker build -t testpython/hello ./
 sudo docker run testpython/hello
---------------------------------------------------------------------------------------
+

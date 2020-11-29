@@ -87,12 +87,14 @@ Service module
            state=stoped, stop the service
 enabled=yes,  if any reload or restart it will start the service.
 --------------------------------------------------------------------------------------------------
-Template - Managing configurations of multiple servers and environments are one of the significant uses of Ansible. But these configuration files may vary for each remote servers or each cluster. But apart from some few parameters, all other settings will be same.
-Creating static files for each of these configurations is not an efficient solution. And It will take a lot more time and every time a new cluster is added you will have to add more files. So if there is an efficient way to manage these dynamic values it would be beneficial. This is where Ansible template modules come into play.
+Template - Managing configurations of multiple servers and environments are one of the significant uses of Ansible. But these configuration files may vary for each remote servers or each cluster. But apart from some few parameters, all other settings will be same.Creating static files for each of these configurations is not an efficient solution. And It will take a lot more time and every time a new cluster is added you will have to add more files. So if there is an efficient way to manage these dynamic values it would be beneficial. This is where Ansible template modules come into play.
+
 A template in Ansible is a file which contains all your configuration parameters, but the dynamic values are given as variables. During the playbook execution, depending on the conditions like which cluster you are using, the variables will be replaced with the relevant values.
+
 You can do much more than replacing the variables though, with the help of Jinj2 templating engine. You can have conditional statements, loops, write macros, filters for transforming the data, do arithmetic calculations, etc.
 The template files will usually have the .j2 extension, which denotes the Jinja2 templating engine used.
 The variables in a template file will be denoted by the double curly braces, ‘{{ variables }}’.
+
 example:
 .j2 for jinja 2 .
 Upstream deom {
@@ -195,7 +197,6 @@ $ ansible-playbook site.yml --skip-tags “packages”
 So if something not changed then it won’t give anything about changed.
 
 changed_when: false changed_when: “active.stdout_lines != sites.keys()” 
---------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------- 
 Use for execute the playbook step by step.
 $ ansible-playbook site.yml --step  
@@ -258,6 +259,3 @@ handlers:
 
      For execute this playbook 
 $ ansible-playbook file.yml
-
-----------------------------------------------------------------------
-
