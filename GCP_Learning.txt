@@ -1,0 +1,9 @@
+GCP Learning
+
+Storage classes:
+Standard
+Nearline
+Coldline
+Archive
+
+Cloud Pub/Sub -> messaging service inbetween services
