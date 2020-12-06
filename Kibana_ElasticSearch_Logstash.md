@@ -13,6 +13,7 @@
 
 ### filebeat.inputs:
 ```
+filebeat.inputs:
 - type: s3
   queue_url: https://sqs.us-east-1.amazonaws.com/123/test-queue
   access_key_id: '<access_key_id>'
