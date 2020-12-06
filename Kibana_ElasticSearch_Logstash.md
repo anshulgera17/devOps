@@ -1,22 +1,20 @@
-What is ELK ?
+# Elastic search, Kibana learning and setup
+- Q1. What is ELK ?
+- Q2. What is Elastic search and Kibana ?
 
-What is Elastic search and Kibana ?
+- Download elastic search, Kibana and filebeat in windows, Unzip all folders
+- Run .\elasticsearch batch file in /bin folder 
+- check localhost:9200
 
-Download elastic search in windows
-Download Kibana in windows
-Download filebeat in windows
-
-Unzip all folders
-Run .\elasticsearch batch file in /bin folder 
-And check localhost:9200
-
-Then go to kibana folder 
+<p>Then go to kibana folder 
 And run kibana.bat file in /bin folder
 Check kibana dashboard using -> localhost:5601
-
+</p>
+<p>
 Then go to filebeat folder 
 File Beat config file /etc/filebeat/filebeat.yml
 /etc/filebeat/filebeat.yml
+</p>
 
  sudo filebeat modules enable aws
 /etc/filebeat/modules.d/aws.yml
