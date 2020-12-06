@@ -23,6 +23,7 @@ $ git init --bare
 - `git config --global user.name “anshulgera17”`
 - `git config --global user.email anshulgera17@gmail.com`
 - `git clone (url)`
+
 - Create file and folders inside /C/git/ `git add filename`
 - Checking status `git status`
 - `git commit -m “comments” filename`
