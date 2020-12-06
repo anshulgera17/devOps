@@ -68,4 +68,3 @@ CMD [ "python", "/home/ubuntu/my_docker_build/my_script.py" ]
 sudo docker build -t testpython/hello ./
 sudo docker run testpython/hello
 ```
-
