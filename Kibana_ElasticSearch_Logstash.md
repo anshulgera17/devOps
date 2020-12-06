@@ -5,22 +5,14 @@
 - Download elastic search, Kibana and filebeat in windows, Unzip all folders
 - Run .\elasticsearch batch file in /bin folder 
 - check localhost:9200
+- Then go to kibana folder and run `kibana.bat` file in `/bin` folder
+- Check kibana dashboard using `localhost:5601`
+- Then go to filebeat folder, File Beat config file /etc/filebeat/filebeat.yml
+- `sudo filebeat modules enable aws /etc/filebeat/modules.d/aws.yml`
+- and add aws s3 details in the above file
 
-<p>Then go to kibana folder 
-And run kibana.bat file in /bin folder
-Check kibana dashboard using -> localhost:5601
-</p>
-<p>
-Then go to filebeat folder 
-File Beat config file /etc/filebeat/filebeat.yml
-/etc/filebeat/filebeat.yml
-</p>
-
- sudo filebeat modules enable aws
-/etc/filebeat/modules.d/aws.yml
-and add aws s3 details in the above file
-
-filebeat.inputs:
+### filebeat.inputs:
+```
 - type: s3
   queue_url: https://sqs.us-east-1.amazonaws.com/123/test-queue
   access_key_id: '<access_key_id>'
@@ -43,3 +35,4 @@ filebeat.inputs:
 - type: s3
   queue_url: https://sqs.us-east-1.amazonaws.com/123/test-queue
   credential_profile_name: test-fb
+```
