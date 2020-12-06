@@ -46,6 +46,7 @@ sudo apt-get update
 - If you use Ubuntu, you can find initialAdminPassword using `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
 - then configure the username and password for jenkins login, then you can login http://----url----:8080/
 
+#### Jenkins pipeline example 
 ```
 pipeline {
     agent {
