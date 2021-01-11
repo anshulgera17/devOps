@@ -1,11 +1,55 @@
 # Docker Learning data and commands for setup and use
 #### What is docker ?
 ##### Answer:
--    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
+-    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.(solomon hykes)
+golang is used to create docker
     
 #### What is containarization ?
 ##### Answer:
 -    Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
+- Leightweight
+- containers will be treated as processes
+- process level isolation
+- less secure
+- start very fast 
+- pre-built containers
+- easy to create and destroy(immutable)
+- create in seconds
+
+#### Explain docker architecture ?
+##### Answer:
+-  REST API + dockerd (namespaces + libcontainer + control groups (cgroups) )
+#### Layer based approach
+- Union file system (UnionFS)
+- UFS having AUFS, Btrfs, VFS and devicemapper
+- Layered file system contains: writtable layer + (run application + install JVM+ copy source + Manifest)
+
+#### what are the docker objects ?
+#### Answer:
+- Images
+- Containers
+- Network
+- Volumes
+- Registry
+- Service
+
+#### Modes in Docker ?
+#### Answer:
+- Attached mode (container will also exitted, after exit)
+- Dettached mode
+
+#### Dockerfile 
+- FROM
+- ENV
+- RUN
+- CMD
+- EXPOSE
+- WORKDIR
+- ADD
+- COPY
+- LABEL
+- MAINTAINER
+- ENTRYPOINT
 
 #### Docker installation in ec2 ubuntu instance 
 
@@ -38,8 +82,6 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 ```
 - `sudo dpkg -i /path/to/package.deb`
 - `sudo docker run hello-world`
-
-- `sudo docker images`
 - `sudo docker ps -a`
 - `sudo docker version`
 - `sudo docker info`
@@ -54,7 +96,48 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 - Ctrl + P + Q
 - stop all container `sudo docker stop $(docker ps -aq)`
 - remove/delete all docker container `sudo docker rm $(docker  ps -aq)`
+#### images
 
+```bash
+    > docker image ls
+    > docker image pull hello-world
+    > docker image rm hello-world
+
+    > docker image build -t mywebsite .
+    > docker image tag mywebsite <docker hub username>/mywebsite
+    > docker login
+```
+##### container
+
+```bash
+    > docker container create hello-world
+    > docker container start <container id/name>
+    > docker container stop <container id/name>
+
+    > docker container ls
+    > docker container ls -a
+
+    > docker container rm <container id/name>
+
+    > docker container run hello-world
+    > docker container run --name mycontainer hello-world
+    > docker container run --name mycontainer --rm hello-world
+
+    > docker container run --name ubuntu --rm ubuntu date
+    > docker container run --name ubuntu -it ubuntu
+    > docker container run --name ubuntu -itd ubuntu
+    > docker container start ubuntu
+    > docker container attach ubuntu
+    > docker container exec ubuntu ls -l
+    > docker container exec -it ubuntu bash
+
+    > docker container run -itd --name mysql -e MYSQL_ROOT_PASSWORD=root  mysql
+
+    > docker container run -itd --name nginx nginx
+
+    > docker container inspect nginx
+    > docker container run -itd --name nginx -p 8080:80 nginx
+```
 #### Swarm mode theory
 - After install docker 
 - Start swarm in 1st node `sudo docker swarm init --advertise-addr 35.173.134.200:2377`

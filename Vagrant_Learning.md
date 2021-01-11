@@ -10,7 +10,11 @@
 - provision setting
 
 #### Vagrant commands
+- `vagrant -v`
+- `vagrant box add ubuntu/trusty64`
+- `vagrant init ubuntu/trusty64`
 - `vagrant up`
+- `vagrant ssh` `vagrant ssh-config`
 - `vagrent suspend`
 - `vagrant resume`
 - `vagrant reload`
