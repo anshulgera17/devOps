@@ -53,6 +53,7 @@ golang is used to create docker
 #### what is port forwarding ?
 #### Answer: 
 - sending server request to container port is port forwarding we can achieve by `docker container run -itd --name nginx -p 8080:80 nginx` p option
+-  port forwarding or port mapping is an application of network address translation that redirects a communication request from one address and port number combination to another while the packets are traversing a network gateway, such as a router or firewall
 #### Docker installation in ec2 ubuntu instance 
 
 - Go to this link and run commands:-
