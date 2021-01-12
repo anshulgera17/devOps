@@ -73,29 +73,27 @@ golang is used to create docker
    $(lsb_release -cs) \
    stable"
 ```
-- `sudo apt-get update`
-- `sudo apt-get install docker-ce `
+- `apt-get update`
+- `apt-get install docker-ce `
 - `apt-cache madison docker-ce`
 ```
 sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
 sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
-- `sudo dpkg -i /path/to/package.deb`
-- `sudo docker run hello-world`
-- `sudo docker ps -a`
-- `sudo docker version`
-- `sudo docker info`
-- `sudo docker run hello-world`
-- `sudo docker pull alpine`
-- `sudo docker pull ubuntu`
-- particular version `sudo docker pull ubuntu:14.04`
-- remove images `sudo docker rmi “image-id”`
-- start stop container `sudo docker start <container>`, `sudo docker stop <container>`
-- run a container `sudo docker run -it --name temp ubuntu:latest /bin/bash`
-- exit from a container without killing it `ps -elf`
+- `dpkg -i /path/to/package.deb`
+- `docker run hello-world`
+- `docker ps -a`
+- `docker version`
+- `docker info`
+- `docker run hello-world`
+- `docker pull alpine`
+- `docker pull ubuntu`
+- `docker pull ubuntu:14.04` particular version 
+- `docker rmi “image-id”` remove images 
+- `ps -elf` exit from a container without killing it 
 - Ctrl + P + Q
-- stop all container `sudo docker stop $(docker ps -aq)`
-- remove/delete all docker container `sudo docker rm $(docker  ps -aq)`
+- `docker stop $(docker ps -aq)` stop all container 
+- `docker rm $(docker  ps -aq)`remove/delete all docker container 
 #### images
 
 ```bash
