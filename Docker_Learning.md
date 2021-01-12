@@ -50,7 +50,9 @@ golang is used to create docker
 - LABEL
 - MAINTAINER
 - ENTRYPOINT
-
+#### what is port forwarding ?
+#### Answer: 
+- sending server request to container port is port forwarding we can achieve by `docker container run -itd --name nginx -p 8080:80 nginx` p option
 #### Docker installation in ec2 ubuntu instance 
 
 - Go to this link and run commands:-
@@ -80,20 +82,18 @@ golang is used to create docker
 sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
 sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
-- `dpkg -i /path/to/package.deb`
-- `docker run hello-world`
-- `docker ps -a`
+- `sudo groupadd docker` create docker group
+- `sudo usermod -aG docker $USER` add your user to docker group
+
 - `docker version`
 - `docker info`
-- `docker run hello-world`
-- `docker pull alpine`
-- `docker pull ubuntu`
 - `docker pull ubuntu:14.04` particular version 
 - `docker rmi “image-id”` remove images 
 - `ps -elf` exit from a container without killing it 
-- Ctrl + P + Q
+-  Ctrl + P + Q
 - `docker stop $(docker ps -aq)` stop all container 
 - `docker rm $(docker  ps -aq)`remove/delete all docker container 
+
 #### images
 
 ```bash
