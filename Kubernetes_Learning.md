@@ -41,4 +41,25 @@
 - https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
 - if face issue follow this page for docker issue https://itsfoss.com/could-not-get-lock-error/ 
 
-
+#### Practice
+```
+kubectl create -f nginx.yaml
+kubectl get pods
+kubectl describe pods
+kubectl delete pod pod-name
+kubectl get nodes (check nodes status from master)
+kubectl describe node nodename
+kubectl get deployments
+kubectl describe deployment nginx
+kubectl get deployment nginx-deployment -o yaml
+kubectl set image deployment/nginx-deployment nginx=nginx:1.8 (for update the image )
+kubectl create -f nginx-deployment.yaml
+kubectl get pods -l app=nginx -o wide
+kubectl set image deployment nginx-deployment nginx=nginx:1.8
+kubectl apply -f nginx-deployment.yaml
+kubectl rollout undo deployment/nginx-deployment 
+kubectl rollout status deployment nginx-deployment
+kubectl rollout history deployment nginx-deployment
+kubectl rollout undo deployment nginx-deployment --to-revision=x
+kubectl delete -f nginx-deployment.yaml
+```
