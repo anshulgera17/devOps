@@ -1,3 +1,16 @@
+Oracle Interview questions
+----------------------------
+Explain about your project and how much experience do you have in technologies or devops tools, and your day-to-day work  
+Architecture of kubernetes
+what is helm in kubernetes and how to write YAML file in it
+difference between ADD and COPY in docker
+difference between CMD and ENTRYPOINT in docker
+how to create and run container using dockerfile
+what is docker-compose and how to execute Docker-compose.yaml
+what is difference between Dockerfile and Docker-compose.yaml file
+write code for fibonacci series in python
+write code for swapping in python
+
 Sailpoint interview questions
 ----------------------------------------------------------
 slash 24 in subnet

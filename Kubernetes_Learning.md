@@ -12,13 +12,11 @@
 - Kucectl get pods --all-namespaces
 - Kubectl get nodes
 - Master
-- Etcd
 - Api server
 - Scheduler 
 - Controller manager
 - Node (similar to minions) previously called them minions, node contains (kubelet, kubeproxy, Pod(container))
 - Proxy
-- Kubelet
 - Container runtime
 
 #### Kubernetes Architecture ?
