@@ -1,3 +1,16 @@
+Amdocs 1st technical round Interview questions for DevOps profile (after written cleared)
+--------------------------------------
+Python: can you write python function, class, write function for add, print hello world, take user arguments and do addition
+Git: Git create branch, merge branch, commit, push
+Kubernetes: probes in kubernetes, what is helm, kubernetes architecture
+what is microservices
+Jenkins: what is jenkins, how to add ec2 vm in jenkins
+Do you know any monitoring tool
+Linux:
+command to check the previous command status
+how to add path variable using linux command
+AWS: what AWS services do you know 
+
 Oracle Interview questions
 ----------------------------
 Explain about your project and how much experience do you have in technologies or devops tools, and your day-to-day work  
