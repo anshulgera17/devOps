@@ -14,7 +14,7 @@
 - Performance efficiency
 - Cost optimization
 <br>
-
+<p>
 > IAM: Users, Groups, Roles, Policies
 > Root, administrator, power users
 > STS - IAM (security token service)
@@ -27,4 +27,4 @@
 > Custom Identity Provider
 > LDAP/Active Directory
 > OpenIDConnect for connecting login from - facebook, google….
-
+</p>
