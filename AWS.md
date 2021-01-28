@@ -5,7 +5,7 @@
 - Security - 26 %
 - Cost optimization - 10 %
 - Operational Excellence -  6 %
-
+<br>
 
 - AWS well architected framework
 - Operational excellence 
@@ -13,6 +13,7 @@
 - Security
 - Performance efficiency
 - Cost optimization
+<br>
 
 - IAM: Users, Groups, Roles, Policies
 - Root, administrator, power users
