@@ -1,0 +1,13 @@
+FROM alpine
+
+# install JRE (JVM)
+# apt-get install openjdk8-jre
+# yum install openjdk8-jre
+# dnf install openjdk8-jre
+RUN apk add openjdk8-jre
+
+WORKDIR /src
+
+COPY Test.class .
+
+CMD java Test

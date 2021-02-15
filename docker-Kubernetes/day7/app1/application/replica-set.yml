@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: website
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      type: frontend
+  template:
+    metadata:
+      name: website
+      labels:
+        type: frontend
+    spec:
+      containers:
+        - name: website
+          image: pythoncpp/website:v1
+          ports:
+            - containerPort: 80
+              protocol: TCP
+              name: http

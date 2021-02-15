@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: website
+  labels:
+    type: frontend
+spec:
+  containers:
+    - name: website
+      image: pythoncpp/website:v1
+      ports:
+        - containerPort: 80
+          protocol: TCP
+          nodePort: 31111
+          name: http

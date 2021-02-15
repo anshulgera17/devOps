@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mywebsite-svc
+spec:
+  type: NodePort
+  selector:
+    type: mywebsite
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 31201

@@ -1,0 +1,20 @@
+FROM openjdk:8
+
+WORKDIR /src
+
+COPY Test.java .
+
+# install g++
+# RUN apt-get install gcc
+
+# build the application
+# compile the code
+# executed while buidling the image
+RUN javac Test.java
+# RUN ["javac", "Test.java"]
+
+# run the application when container starts
+# executed every time when container starts
+CMD java Test
+# CMD ["sh", "-c", "java", "Test"]
+# CMD ["java", "Test"]

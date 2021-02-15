@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mywebsite-deployment
+  labels:
+    type: mywebsite
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      type: mywebsite
+
+  template:
+    metadata:
+      name: mywebsite-pod
+      labels:
+        type: mywebsite
+    spec:
+      containers:
+        - name: mywebsite-container
+          image: pythoncpp/mywebsite:v4
+          ports:
+            - containerPort: 80
+              name: http
+              protocol: TCP

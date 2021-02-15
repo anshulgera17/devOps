@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pythonapp:
+    build: ./python-app
+    ports:
+      - '3000:3000'
+
+  nodeapp:
+    build: ./express-app
+    ports:
+      - '4000:4000'
