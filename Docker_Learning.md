@@ -1,12 +1,13 @@
 # Docker Learning data and commands for setup and use
-#### What is docker ?
-##### Answer:
--    Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.(solomon hykes)
+
+## What is docker ?
+
+- Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.(solomon hykes)
 golang is used to create docker
-    
-#### What is containarization ?
-##### Answer:
--    Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
+
+## What is containarization ?
+
+- Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
 - Leightweight
 - containers will be treated as processes
 - process level isolation
@@ -16,16 +17,18 @@ golang is used to create docker
 - easy to create and destroy(immutable)
 - create in seconds
 
-#### Explain docker architecture ?
-##### Answer:
--  REST API + dockerd (namespaces + libcontainer + control groups (cgroups) )
-#### Layer based approach
+## Explain docker architecture ?
+
+- REST API + dockerd (namespaces + libcontainer + control groups (cgroups) )
+
+## Layer based approach
+
 - Union file system (UnionFS)
 - UFS having AUFS, Btrfs, VFS and devicemapper
 - Layered file system contains: writtable layer + (run application + install JVM+ copy source + Manifest)
 
-#### what are the docker objects ?
-#### Answer:
+## what are the docker objects ?
+
 - Images
 - Containers
 - Network
@@ -33,12 +36,13 @@ golang is used to create docker
 - Registry
 - Service
 
-#### Modes in Docker ?
-#### Answer:
+## Modes in Docker
+
 - Attached mode (container will also exitted, after exit)
 - Dettached mode
 
-#### Dockerfile 
+## Dockerfile
+
 - FROM
 - ENV
 - RUN
@@ -50,12 +54,13 @@ golang is used to create docker
 - LABEL
 - MAINTAINER
 - ENTRYPOINT
-#### what is port forwarding ?
-#### Answer: 
-- sending server request to container port is port forwarding we can achieve by `docker container run -itd --name nginx -p 8080:80 nginx` p option
--  port forwarding or port mapping is an application of network address translation that redirects a communication request from one address and port number combination to another while the packets are traversing a network gateway, such as a router or firewall
 
-#### Docker installation in ec2 ubuntu instance 
+## what is port forwarding
+
+- sending server request to container port is port forwarding we can achieve by `docker container run -itd --name nginx -p 8080:80 nginx` p option
+- port forwarding or port mapping is an application of network address translation that redirects a communication request from one address and port number combination to another while the packets are traversing a network gateway, such as a router or firewall
+
+## Docker installation in ec2 ubuntu instance
 
 - Go to this link and run commands:-
 - `https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-using-the-repository`
@@ -68,22 +73,29 @@ golang is used to create docker
     ca-certificates \
     curl \
     software-properties-common
+    
 ```
+
 - `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 - `sudo apt-key fingerprint 0EBFCD88`
+
 ```
    sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 ```
+
 - `apt-get update`
-- `apt-get install docker-ce `
+- `apt-get install docker-ce`
 - `apt-cache madison docker-ce`
+
 ```
+
 sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
 sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
+
 - `sudo groupadd docker` create docker group
 - `sudo usermod -aG docker $USER` add your user to docker group
 
@@ -92,11 +104,11 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
 - `docker pull ubuntu:14.04` particular version 
 - `docker rmi “image-id”` remove images 
 - `ps -elf` exit from a container without killing it 
--  Ctrl + P + Q
+- Ctrl + P + Q
 - `docker stop $(docker ps -aq)` stop all container 
 - `docker rm $(docker  ps -aq)`remove/delete all docker container 
 
-#### images
+## images
 
 ```bash
     > docker image ls
@@ -107,7 +119,8 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
     > docker image tag mywebsite <docker hub username>/mywebsite
     > docker login
 ```
-##### container
+
+## container
 
 ```bash
     > docker container create hello-world
@@ -138,11 +151,14 @@ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> c
     > docker container inspect nginx
     > docker container run -itd --name nginx -p 8080:80 nginx
 ```
-#### Swarm mode theory
+
+## Swarm mode theory
+
 - After install docker 
 - Start swarm in 1st node `sudo docker swarm init --advertise-addr 35.173.134.200:2377`
 
-### Dockerfile
+## Dockerfile
+
 ```
 FROM python
 ADD my_script.py /home/ubuntu/my_docker_build/my_script.py

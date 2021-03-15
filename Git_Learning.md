@@ -1,4 +1,5 @@
 # Git commands use, learning data and questions for interview
+
 - Q1. What is SCM ?
 - Q2. What is difference between git and svn ?
 - Q3. What is Git ?
@@ -9,17 +10,22 @@
 - Q8. What is the difference between git pull and git fetch ?
 - Q9. What is ‘staging area’ 
 
-#### For Git Configuration in ec2 instance 
+## Git Configuration in ec2 instance
+
 ```
 Create a repo folder 
 $ Mkdir repo 
 $ cd repo
 $ git init --bare
 ```
-#### Git-hub
+
+## Git-hub
+
 - Username : anshulgera17
 - Email: anshulgera17@gmail.com
-##### Configure git in terminal
+
+## Configure git in terminal
+
 - `git config --global user.name “anshulgera17”`
 - `git config --global user.email anshulgera17@gmail.com`
 - `git clone (url)`
@@ -27,7 +33,7 @@ $ git init --bare
 - Create file and folders inside /C/git/ `git add filename`
 - Checking status `git status`
 - `git commit -m “comments” filename`
-- `git push -u origin master` 
+- `git push -u origin master`
 
 - `git archive --format=zip master^ README >file.zip`
 - `git diff`
@@ -41,31 +47,33 @@ $ git init --bare
 - Unstage the git file using `git reset HEAD fileName`
 - `git log` for showing the logs after commit
 - `git rm fileName` for delete a file
-- If you delete file using rm command then you can recover using command `git checkout -- fileName` 
-- If we want to ignore files and don’t wanna add those in git but present in that folder then we can add that file name in `.gitignore `file or any particular extension like `.jpg` files. Or you can ignore whole folder
+- `git checkout -- fileName` If you delete file using rm command then you can recover using command 
+- If we want to ignore files and don’t wanna add those in git but present in that folder then we can add that file name in `.gitignore` file or any particular extension like `.jpg` files. Or you can ignore whole folder
 - `git clone existingFolder NewFolder` for crating clone of the folder and then you can work in that folder
 - `git config -` shows more detailed configuration
-- `git log --oneline` shows better for comments and changes in logs 
--  for more information use `git log -p` 
-- For create a branch in git `git branch branchName`
-- And we can modify in the new folder and create new files in that folder new branch
+- `git log --oneline` shows better for comments and changes in logs
+- `git log -p` for more information use
+- `git branch branchName` create a branch in git
+- we can modify in the new folder and create new files in that folder new branch
 - Then run `git checkout master` means we switched back to master branch.
 
-- `git commit -a -m “comment ”  -a` is used if we want to commit untracked file (means we didn’t run `git add` command and did the changes in file )
-#### Git Commands 
+- `git commit -a -m “comment ”  -a` is used if we want to commit untracked file (means we didn’t run `git add` command and did the changes in file)
+
+## Git Commands
+
 - `git config`
-- Usage: `git config –global user.name “[name]”`  
-- Usage: `git config –global user.email “[email address]” `
+- `git config –global user.name “[name]”`  
+- `git config –global user.email “[email address]”`
 - `git init`
 - `git init [repository name]`
-- `git clone`, `git clone [url] ` 
+- `git clone`, `git clone [url]`
 - `git add`, `git add [file]`
-- `git commit`, `git commit -m “[ Type in the commit message]” ` 
-- `git diff` , `git diff –staged `, `git diff [first branch] [second branch]  `
+- `git commit`, `git commit -m “[ Type in the commit message]”`
+- `git diff` , `git diff –staged`, `git diff [first branch] [second branch]`
 - `git reset`, `git reset [file]`, `git reset [commit]`, `git reset –hard [commit]`
 - `git status`
 - `git rm`, `git rm [file]`
-- `git log`, `git log –follow[file]` 
+- `git log`, `git log –follow[file]`
 - `git show`, `git show [commit]`
 - `git tag`, `git tag [commitID]`
 - `git branch`, `git branch [branch name]`, `git branch -d [branch name]`

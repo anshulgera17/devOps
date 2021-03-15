@@ -1,10 +1,12 @@
 # Google Cloud Learning (GCP)
 
-#### Storage classes:
+## Storage classes
+
 - Standard
 - Nearline
 - Coldline
 - Archive
 
-#### Cloud Pub/Sub 
--  messaging service inbetween services
+## Cloud Pub/Sub
+
+- messaging service inbetween services

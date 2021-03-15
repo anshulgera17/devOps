@@ -1,21 +1,24 @@
-# Jenkins setup and learning 
+# Jenkins setup and learning
+
 - Q1. What is Jenkins ?
-#### Answer
+
+## Answer
+
 - An open source automation server which enables developers around the world to reliably build, test, and deploy their software.
 
-- Q2. What is CI-CD ?
-
 ## LearningJenkins
+
 - Blue ocean aggregator plugin in jenkins for generate pipeline code
 - Scripted pipeline (preparation, build and results stages here) using groovy scripting language
 - Declarative pipeline (it is having stages and steps in it with in pipeline)
 - Declarative detective generator
-- Groovy vs DSL 
+- Groovy vs DSL
 - Jenkinsfile: if you wanna use source control outside jenkins server then use JenkinsFile to do
-- Pipeline → Stages → stage → steps 
-- You can have agent, tools, option, triggers - inside pipeline 
+- Pipeline → Stages → stage → steps
+- You can have agent, tools, option, triggers - inside pipeline
 
-### Jenkins installation process
+## Jenkins installation process
+
 ```
 sudo apt-get update
 sudo apt-get install default-jre
@@ -34,19 +37,22 @@ wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add
 echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
 sudo apt-get update
 ```
+
 - For the versions in cache `apt-cache policy jenkins`
 - `sudo apt-get install jenkins=2.176.3`  (for specific version)
 - `sudo systemctl start jenkins`
 - `sudo systemctl status jenkins`
 
-#### Step 3 — Opening the Firewall
+## Step 3 — Opening the Firewall
+
 - By default, Jenkins runs on port 8080, so we'll open that port using ufw `sudo ufw allow 8080`
 - We can see the new rules by checking UFW's status `sudo ufw status`
 
 - If you use Ubuntu, you can find initialAdminPassword using `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
 - then configure the username and password for jenkins login, then you can login http://----url----:8080/
 
-#### Jenkins pipeline example 
+## Jenkins pipeline example
+
 ```
 pipeline {
     agent {
@@ -97,8 +103,8 @@ pipeline{
             docker{image 'centos:7'
             args '-u root'
             label 'docker2'
-    }
-	}
+        }
+	    }
     stages{
         stage ('dependencies'){
             steps{

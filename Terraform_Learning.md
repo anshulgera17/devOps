@@ -1,21 +1,28 @@
 # Terraform Learning and commands to use 
+
 - Q1. What is Terraform ?
+
 #### Answer
+
 - Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions. Configuration files describe to Terraform the components needed to run a single application or your entire datacenter
 
 - `sudo curl -O https://releases.hashicorp.com/terraform/0.11.5/terraform_0.11.5_linux_amd64.zip`
 - `sudo apt-get install unzip`
-- `sudo mkdir /bin/terraform `
+- `sudo mkdir /bin/terraform`
 - `sudo unzip terraform_0.11.5_linux_amd64.zip -d /usr/local/bin/`
 - `terraform init`
 - `vi main.tf`
-#### Download the latest Ghost image
+
+## Download the latest Ghost image
+
 ```
 resource "docker_image" "image_id" {
  name = "ghost:latest"
 }
 ```
-### Terraform commands to use 
+
+## Terraform commands to use
+
 - `terraform init`
 - `terraform plan`
 - `terraform apply`
@@ -25,24 +32,27 @@ resource "docker_image" "image_id" {
 - `terraform show`
 - `terraform console`
 
-#### variable in terraform
+## variable in terraform
+
 - while apply terraform it will ask you to use what or we can set default value as well
 - terraform modules
 - maps and lookups
-- terraform workspaces `terraform workspacre new dev`, `terraform workspace select dev`, `terraform workspace select default`
+- terraform workspaces `terraform workspace new dev`, `terraform workspace select dev`, `terraform workspace select default`
 - null resource and local-exec
 
-#### Terraform Components
+## Terraform Components
 
-- Terraform does this with a few different components: Configurations: A Terraformconfiguration is the text file that contains the infrastructure resource definitions, When you define a configuration, you are defining one or more (typically more) resources
+- Terraform does this with a few different components: Configurations: A Terraform configuration is the text file that contains the infrastructure resource definitions, When you define a configuration, you are defining one or more (typically more) resources
 
-#### Creating Modules
+## Creating Modules
+
 - A module is a container for multiple resources that are used together. Modules can be used to create lightweight abstractions, so that you can describe your infrastructure in terms of its architecture, rather than directly in terms of physical objects.
 The .tf files in your working directory when you run terraform plan or terraform apply together form the rootmodule. That module may call other modules and connect them together by passing output values from one to input values of another.
 
 - Interpolation Syntax `{docker_image.image_id.latest}`
 
-#### Start the Container
+## Start the Container
+
 ```
 resource "docker_container" "container_id" {
   name  = "blog"
@@ -55,14 +65,18 @@ resource "docker_container" "container_id" {
 ```
 
 - For destroy the infrastructure `terraform destroy`
-#### Tainting and updating resources 
+
+## Tainting and updating resources
+
 - `terraform taint docker_container.container_id`, `terraform untaint docker_container.container_id`
 
-#### Terraform console and output
+## Terraform console and output
+
 - `terraform show`, `terraform console` 
 - `> docker_container.container_id.name`
 
-#### Output the IP Address of the Container
+## Output the IP Address of the Container
+
 ```
 output "IP Address" {
   value = "${docker_container.container_id.ip_address}"
@@ -72,7 +86,9 @@ output "container_name" {
   value = "${docker_container.container_id.name}"
 }
 ```
-#### Terraform variables
+
+## Terraform variables
+
 ```
 variable "container_name" {
   description = "Name of container"
@@ -91,13 +107,17 @@ variable "ext_port" {
   default = "80"
 }
 ```
-#### Download the latest Ghost Image
+
+## Download the latest Ghost Image
+
 ```
 resource "docker_image" "image_id" {
   name = "${var.image}"
 }
 ```
-#### Start the Container
+
+## Start the Container
+
 ```
 resource "docker_container" "container_id" {
   name  = "${var.container_name}"
@@ -108,15 +128,18 @@ resource "docker_container" "container_id" {
   }
 }
 ```
+
 - main.tf , variables.tf, outputs.tf
-#### Modules
+
+## Modules
+
 - Create folders like image and containers and create files inside the folders 
 - main.tf , variables.tf, outputs.tf
 - `terraform init` (inside the image folder)
 - `terraform plan`
 - `terraform apply`
-
 - For connecting modules need to write something in root module `main.tf`
+
 ```
 module “image”
 {
@@ -134,6 +157,7 @@ ext_port = “${var.ext_port}”
 ```
 
 - And in the outputs.tf in root folder
+
 ```
 output   “IP Address”
 {

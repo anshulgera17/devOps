@@ -1,3 +1,33 @@
+Cloud Elements 1st Round Technical questions (after clearing coding task 3 question (2 shell scripting + 1 python))
+--------------------------------------------------
+What are the tasks you did last week and what are the tasks you have to do next week
+
+AWS
+Tell me services which you used from AWS
+How to create an EC2 instance tell steps 
+How to configure S3 
+Types of S3 object, cheapest option to save any object
+Is their any object that is restricted in S3
+explain in Cloudwatch I want to send email if server is down using AWS SNS
+
+Jenkins
+How to create a pipeline
+How to create build and deploy
+How to deploy in particular slave instance
+
+Linux
+from name get the value from multiple lines like 
+name:marks
+anshul:70
+dinesh:30
+... 100 lines
+
+Docker
+Create image for java application and then deploy on particular port tell step by step
+
+Python 
+Explained tasks i did in my work related to python
+------------------------------------------------------------------------------------------------
 Amdocs 1st technical round Interview questions for DevOps profile (after written cleared)
 --------------------------------------
 Python: can you write python function, class, write function for add, print hello world, take user arguments and do addition
