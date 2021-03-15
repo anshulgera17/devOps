@@ -1,4 +1,14 @@
-# AWS Solution Architect Exam
+# AWS Learning
+
+## AWS questions
+
+- What is VPC ?
+- What is difference between public and private subnet ?
+- What is reserved instance ?
+- What is difference between spot instance and reserved instance ?
+- What is cloud formation ?
+- Have you used Route 53 ?
+- What is the best feature of AWS which you like ?
 
 - 130 mins , 65 questions and $ 150 USD.
 - Reliability - 34 %

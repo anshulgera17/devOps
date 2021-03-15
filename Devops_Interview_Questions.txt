@@ -29,7 +29,7 @@ Python
 Explained tasks i did in my work related to python
 ------------------------------------------------------------------------------------------------
 Amdocs 1st technical round Interview questions for DevOps profile (after written cleared)
---------------------------------------
+------------------------------------------------------------------------------------------------
 Python: can you write python function, class, write function for add, print hello world, take user arguments and do addition
 Git: Git create branch, merge branch, commit, push
 Kubernetes: probes in kubernetes, what is helm, kubernetes architecture
@@ -40,9 +40,9 @@ Linux:
 command to check the previous command status
 how to add path variable using linux command
 AWS: what AWS services do you know 
-
-Oracle Interview questions
-----------------------------
+---------------------------------------------
+Oracle Interview questions for DevOps Profile
+---------------------------------------------
 Explain about your project and how much experience do you have in technologies or devops tools, and your day-to-day work  
 Architecture of kubernetes
 what is helm in kubernetes and how to write YAML file in it
@@ -53,8 +53,8 @@ what is docker-compose and how to execute Docker-compose.yaml
 what is difference between Dockerfile and Docker-compose.yaml file
 write code for fibonacci series in python
 write code for swapping in python
-
-Sailpoint interview questions
+----------------------------------------------------------
+Sailpoint interview questions for DevOps Profile
 ----------------------------------------------------------
 slash 24 in subnet
 docker and mysql connection - what docker provides for this
@@ -68,44 +68,6 @@ How to debug if i am unable to create file in Linux
 How to debug memory issue in linux
 What is ELK stack, how you can explain to your manager
 ------------------------------------------------------  
-Linux questions
-what is SSH port forwarding ?
-
-for checking the crontab file command is crontab -l
-1. how to check the current kernal version ? 
-    uname -a
-
-2. how to check the current ip address ? 
-    ifconfig 
-    ip addr show 
-    ip addr show eth0
-
-3. how do you check free disk space?
-    df -ah
-
-4. How do manage service ?
-    service serviceName status/start/stop
-    systemctl status serviceName
-
-5. How would you check the size of a directory's contents on disk ?
-    du -sh directoryName
-
-6.How would you check for open ports on a linux machine?
-    sudo netstat -tulpn
-
-7.   How do you check CPU usage for a process?
-    ps aux | grep processName
-    top
-    htop
-
-8. Dealing with mounts
-    ls /mnt
-    mount /dev/sda2 /mnt
-    mount
-
-9. How do you look up something you don't know ?
-    man <command>
-
 
 Deployment Questions:
 what is a blue-green deployment ?
@@ -115,14 +77,6 @@ Have you used jenkins for deployment ?
 what jenkins plugin have you used ?
 have you ever used user data for deployment ?
 
-AWS questions:
-What is VPC ?
-What is difference between public and private subnet ?
-What is reserved instance ?
-What is difference between spot instance and reserved instance ?
-What is cloud formation ?
-Have you used Route 53 ?
-What is the best feature of AWS which you like ?
 
 Configuration management questions:
 Which configuration management tool have you used ?
