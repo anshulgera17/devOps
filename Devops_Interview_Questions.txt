@@ -27,6 +27,14 @@ Create image for java application and then deploy on particular port tell step b
 
 Python 
 Explained tasks i did in my work related to python
+------------------------------------------------------------
+Cloud Elements 2nd Round questions
+------------------------------------------------------------
+write a code to upload folders in aws bucket, for subfolders also
+folder monitor to upload new files
+how you can debug if server is not responding
+how you debug if database server is not responding
+how you can save system variables 
 ------------------------------------------------------------------------------------------------
 Amdocs 1st technical round Interview questions for DevOps profile (after written cleared)
 ------------------------------------------------------------------------------------------------
