@@ -2,7 +2,7 @@
 
 ## AWS questions
 
-- What is VPC ?
+- What is VPC1 ?
 - What is difference between public and private subnet ?
 - What is reserved instance ?
 - What is difference between spot instance and reserved instance ?
