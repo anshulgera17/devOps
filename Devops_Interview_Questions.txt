@@ -1,3 +1,25 @@
+Teradata Interview questions:
+-----------------------------------------------
+Linux:
+how many types of shell you know 
+difference between sed and awk command and their uses, asked to write command with conditions using sed
+flavours of linux and unix
+installation commands like rpm, dpkg
+do you know how to create a repo
+how to install a package
+
+Python:
+tell me about List, tuple and dictionary with example
+asked to write code for fetch data from List and dictionary using multiple files in python and get substring from tuple
+fetch the last character from a string
+
+DevOps:
+which services you know form AWS
+did you ever worked on azure and gcp
+do you know about jenkins
+where you maintain your code like version control management system
+
+--------------------------------------------------
 Cloud Elements 1st Round Technical questions (after clearing coding task 3 question (2 shell scripting + 1 python))
 --------------------------------------------------
 What are the tasks you did last week and what are the tasks you have to do next week
