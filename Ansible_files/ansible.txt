@@ -1,0 +1,34 @@
+$ touch playbook-nginx.yml
+$ vi playbook-nginx.yml
+
+---
+- hosts: localhost
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
+    - name: create self signed certificate 
+      become: yes
+      become_method: sudo
+      command: openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=localhost" -keyout /etc/ssl/private/nginx-selfsigned.key -out  /etc/ssl/certs/nginx-selfsigned.crt
+    - name: nginx configuration 
+      become: yes
+      become_method: sudo
+      command: openssl dhparam -out /etc/nginx/dhparam.pem 4096	  
+    - name: copy nginx configuration file
+      copy:
+        src: /home/ubuntu/allfiles/nginx/self-signed.conf
+        dest: /etc/nginx/snippets/self-signed.conf
+    - name: copy nginx configuration file
+      copy:
+        src: /home/ubuntu/allfiles/nginx/ssl-params.conf
+        dest: /etc/nginx/snippets/ssl-params.conf		
+    - name: copy nginx configuration file
+      copy:
+        src: /home/ubuntu/allfiles/nginx/default
+        dest: /etc/nginx/sites-available/          
+          
+$ ansible-playbook -i inventory.cfg  playbook-nginx.yml  

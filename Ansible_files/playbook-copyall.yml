@@ -1,0 +1,12 @@
+---
+- include: playbook-fetch.yml
+- hosts: slave_host
+  vars:
+      src_dir: /home/ubuntu/index.html
+      dest_dir: /home/ubuntu/testjan25/
+
+  tasks:
+    - name: copy the fetched data
+      copy:
+        src: "{{src_dir}}"
+        dest: "{{dest_dir}}"

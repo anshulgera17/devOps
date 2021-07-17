@@ -1,0 +1,396 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Nexus Repository Manager Single Instance Stack.
+Parameters:
+  InstanceSubnetID:
+    Type: String
+    Description: Subnet ID on required VPC
+  InstanceSecurityGroupName:
+    Type: String
+    Description: Securty group name
+  InstanceRoleInstanceProfile:
+    Type: String
+    Description: Instance role profile iam ARN
+  PublicIPNeeded:
+    Type: String
+    Default: "false"
+    AllowedValues:
+      - "false"
+      - "true"
+  ChefRecipeVersion:
+    Type: String
+    Default: release-0.5.20190418-142648.7f06d21
+    Description: URL of chef cookbook to install
+  LicenseS3Bucket:
+    Type: String
+    Default: ''
+    Description: >-
+      (Optional) The S3 Bucket containing your Nexus Repository Manager license
+      file
+  LicenseS3Path:
+    Type: String
+    Default: ''
+    Description: >-
+      (Optional) The path to your Nexus Repository Manager license file within
+      the S3 Bucket
+  KeyName:
+    Type: String
+    Default: ''
+    Description: Your key pair name for this region
+  InstanceType:
+    Type: String
+    Default: t2.large
+    AllowedValues:
+      - t2.large
+      - t2.xlarge
+      - t2.2xlarge
+      - m4.large
+      - m4.xlarge
+      - m4.2xlarge
+      - m4.4xlarge
+      - m4.10xlarge
+      - m4.16xlarge
+      - m3.large
+      - m3.xlarge
+      - m3.2xlarge
+    MinLength: 1
+    Description: The instance type
+  DeleteBlockDeviceOnTermination:
+    Type: String
+    Default: 'false'
+    AllowedValues:
+      - 'false'
+      - 'true'
+    MinLength: 1
+    Description: >-
+      Automatically delete the instance's root block device on instance
+      termination.
+  NexusRepositoryManagerVersion:
+    Type: String
+    Default: 3.15.2-01
+    MinLength: 1
+    Description: The Nexus Repository Manager version
+  NexusRepositoryManagerSha256:
+    Type: String
+    Default: acde357f5bbc6100eb0d5a4c60a1673d5f1f785e71a36cfa308b8dfa45cf25d0
+    MinLength: 1
+    Description: The Nexus Repository Manager SHA-256 hash
+  JavaDownloadUrl:
+    Type: String
+    Default: >-
+      https://download.oracle.com/otn-pub/java/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/server-jre-8u202-linux-x64.tar.gz
+    MinLength: 1
+    Description: The Java download URL
+  JavaSha256:
+    Type: String
+    Default: 61292e9d9ef84d9702f0e30f57b208e8fbd9a272d87cd530aece4f5213c98e4e
+    MinLength: 1
+    Description: The Java download SHA-256 hash
+  LogGroupName:
+    Type: String
+    Default: ''
+    Description: A custom log group name
+Conditions:
+  HasKeyName:
+    Fn::Not:
+    - Fn::Equals:
+      - ''
+      - Ref: KeyName
+  HasLogGroupName:
+    Fn::Not:
+    - Fn::Equals:
+      - ''
+      - Ref: LogGroupName
+  HasLicense:
+    Fn::Not:
+    - Fn::Equals:
+      - ''
+      - Ref: LicenseS3Bucket
+Mappings:
+  AmiRegionMap:
+    us-east-1:
+      centos7: ami-02eac2c0129f6376b
+    us-east-2:
+      centos7: ami-0f2b4fc905b0bd1f1
+    us-west-1:
+      centos7: ami-074e2d6769f445be5
+    us-west-2:
+      centos7: ami-01ed306a12b7d1c96
+    eu-west-1:
+      centos7: ami-0ff760d16d9497662
+    eu-west-2:
+      centos7: ami-0eab3a90fc693af19
+    eu-central-1:
+      centos7: ami-04cf43aca3e6f3de3
+    ap-southeast-1:
+      centos7: ami-0b4dd9d65556cac22
+    ap-southeast-2:
+      centos7: ami-08bd00d7713a39e7d
+    ca-central-1:
+      centos7: ami-033e6106180a626d0
+Metadata:
+  'AWS::CloudFormation::Interface':
+    ParameterGroups:
+      - Label:
+          default: Launch configuration
+        Parameters:
+          - LicenseS3Bucket
+          - LicenseS3Path
+          - KeyName
+      - Label:
+          default: Instance configuration
+        Parameters:
+          - InstanceType
+          - DeleteBlockDeviceOnTermination
+      - Label:
+          default: Nexus Repository Manager version
+        Parameters:
+          - NexusRepositoryManagerVersion
+          - NexusRepositoryManagerSha256
+      - Label:
+          default: Java version
+        Parameters:
+          - JavaDownloadUrl
+          - JavaSha256
+      - Label:
+          default: Internally used parameters
+        Parameters:
+          - ChefRecipeVersion
+    ParameterLabels:
+      ChefRecipeVersion:
+        default: Version of chef cookbook to install
+      LicenseS3Bucket:
+        default: License S3 bucket
+      LicenseS3Path:
+        default: License S3 path
+      KeyName:
+        default: Key pair
+      InstanceType:
+        default: Instance type
+      DeleteBlockDeviceOnTermination:
+        default: Delete root block device on termination.
+      NexusRepositoryManagerVersion:
+        default: Nexus Repository Manager version
+      NexusRepositoryManagerSha256:
+        default: Nexus Repository Manager SHA-256
+      JavaDownloadUrl:
+        default: Java Download Url
+      JavaSha256:
+        default: Java SHA-256
+      LogGroupName:
+        default: CloudWatch log group name
+Resources:
+  NexusInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      IamInstanceProfile:
+        Ref: InstanceRoleInstanceProfile
+      ImageId:
+        Fn::FindInMap:
+        - AmiRegionMap
+        - Ref: AWS::Region
+        - centos7
+      InstanceType:
+        Ref: InstanceType
+      KeyName:
+        Fn::If:
+        - HasKeyName
+        - Ref: KeyName
+        - Ref: AWS::NoValue
+      NetworkInterfaces:
+      - DeleteOnTermination: 'true'
+        DeviceIndex: 0
+        SubnetId:
+          Ref: InstanceSubnetID
+        GroupSet:
+        - Ref: InstanceSecurityGroupName
+        AssociatePublicIpAddress: 
+          Ref: PublicIPNeeded
+      BlockDeviceMappings:
+      - DeviceName: /dev/sda1
+        Ebs:
+          DeleteOnTermination:
+            Ref: DeleteBlockDeviceOnTermination
+      Tags:
+      - Key: Name
+        Value:
+          Fn::Join:
+          - '-'
+          - - i
+            - Ref: AWS::StackName
+      - Key: Platform
+        Value: nexus-repository-manager
+      - Key: Version
+        Value:
+          Ref: NexusRepositoryManagerVersion
+      UserData:
+        Fn::Base64:
+          Fn::Join:
+          - '
+
+            '
+          - - '#cloud-config'
+            - 'packages:'
+            - ' - wget'
+            - ' - python'
+            - ' - epel-release'
+            - 'bootcmd:'
+            - ' - ''echo [main] > /etc/yum/pluginconf.d/fastestmirror.conf'''
+            - ' - ''echo enabled=0 >> /etc/yum/pluginconf.d/fastestmirror.conf'''
+            - 'users:'
+            - ' - default'
+            - ' - awslogs'
+            - 'runcmd:'
+            - ' - wget -nv --retry-connrefused -tinf --waitretry=5 -T5 https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-latest.tar.gz
+              -O /tmp/aws-cfn-bootstrap-latest.tar.gz'
+            - ' - mkdir -p /opt/aws-cfn-bootstrap/ && tar -xzf /tmp/aws-cfn-bootstrap-latest.tar.gz
+              -C /opt/aws-cfn-bootstrap/ --strip-components=1'
+            - ' - yum install -y python2-pip'
+            - ' - cd /opt/aws-cfn-bootstrap && python setup.py install && pip install
+              boto3'
+            - Fn::Join:
+              - ''
+              - - ' - python /opt/aws-cfn-bootstrap/bin/cfn-init -v --stack '
+                - Ref: AWS::StackName
+                - ' --resource NexusInstance --region '
+                - Ref: AWS::Region
+    Metadata:
+      AWS::CloudFormation::Init:
+        config:
+          files:
+            /tmp/install.sh:
+              source: https://omnitruck.chef.io/install.sh
+              mode: '000400'
+              owner: root
+              group: root
+            /var/chef/chef-repo/.chef/solo.rb:
+              content: 'file_cache_path ''/tmp''
+
+                '
+              mode: '000400'
+              owner: root
+              group: root
+            /var/chef/chef-repo/.chef/solo.json:
+              content:
+                Fn::Join:
+                - '
+
+                  '
+                - - '{'
+                  - '  "run_list": ["recipe[nexus_repository_manager::aws]"],'
+                  - '  "java": {'
+                  - '    "jdk": {'
+                  - '      "8": {'
+                  - '        "x86_64": {'
+                  - Fn::Join:
+                    - ''
+                    - - '          "url": "'
+                      - Ref: JavaDownloadUrl
+                      - '",'
+                  - Fn::Join:
+                    - ''
+                    - - '          "checksum": "'
+                      - Ref: JavaSha256
+                      - '"'
+                  - '        }'
+                  - '      }'
+                  - '    }'
+                  - '  },'
+                  - '  "nexus_repository_manager": {'
+                  - Fn::Join:
+                    - ''
+                    - - '    "version": "'
+                      - Ref: NexusRepositoryManagerVersion
+                      - '",'
+                  - Fn::Join:
+                    - ''
+                    - - '    "nexus_download_sha256": "'
+                      - Ref: NexusRepositoryManagerSha256
+                      - '",'
+                  - Fn::If:
+                    - HasLicense
+                    - Fn::Join:
+                      - ''
+                      - - '    "license_s3_bucket": "'
+                        - Ref: LicenseS3Bucket
+                        - '",'
+                    - ''
+                  - Fn::If:
+                    - HasLicense
+                    - Fn::Join:
+                      - ''
+                      - - '    "license_s3_path": "'
+                        - Ref: LicenseS3Path
+                        - '",'
+                    - ''
+                  - '    "properties": {'
+                  - '        "clustered": false'
+                  - '    },'
+                  - '    "aws": {'
+                  - Fn::Join:
+                    - ''
+                    - - '      "log_group": "'
+                      - Fn::If:
+                        - HasLogGroupName
+                        - Ref: LogGroupName
+                        - Ref: LogGroup
+                      - '",'
+                  - Fn::Join:
+                    - ''
+                    - - '      "region": "'
+                      - Ref: AWS::Region
+                      - '",'
+                  - Fn::Join:
+                    - ''
+                    - - '      "stack_name": "'
+                      - Ref: AWS::StackName
+                      - '"'
+                  - '    }'
+                  - '  }'
+                  - '}'
+              mode: '000400'
+              owner: root
+              group: root
+          commands:
+            01_install_chef:
+              command: bash /tmp/install.sh
+              cwd: /var/chef
+            02_chef_solo:
+              command:
+                Fn::Join:
+                - ''
+                - - 'chef-solo -c /var/chef/chef-repo/.chef/solo.rb -j /var/chef/chef-repo/.chef/solo.json
+                    --recipe-url '
+                  - https://github.com/sonatype/chef-nexus-repository-manager/releases/download/
+                  - Ref: ChefRecipeVersion
+                  - /chef-nexus-repository-manager.tar.gz --chef-license accept
+              cwd: /var/chef/chef-repo
+  LogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName:
+        Ref: LogGroupName
+      RetentionInDays: 7
+Outputs:
+  WebsiteURL:
+    Description: URL for Nexus Repository Manager
+    Value:
+      Fn::Join:
+      - ''
+      - - http://
+        - Fn::GetAtt:
+          - NexusInstance
+          - PublicDnsName
+        - :8081
+  InternalURL:
+    Description: URL for Nexus Repository Manager
+    Value:
+      Fn::Join:
+      - ''
+      - - http://
+        - Fn::GetAtt:
+          - NexusInstance
+          - PrivateIp
+        - :8081
+  LogGroup:
+    Value: 
+      Ref: LogGroup

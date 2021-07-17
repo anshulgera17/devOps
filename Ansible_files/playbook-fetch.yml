@@ -1,0 +1,12 @@
+---
+- hosts: inventory_host
+  vars:
+      src_host: /home/ubuntu/hello.txt1
+
+  tasks:
+    - name: fetch data from server
+      fetch:
+        src: "{{src_host}}"
+        dest: /home/ubuntu/testjanfetch/
+        flat: yes
+
