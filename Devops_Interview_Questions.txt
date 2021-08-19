@@ -1,4 +1,4 @@
-Teradata Interview questions:
+Teradata 1st Interview questions:
 -----------------------------------------------
 Linux:
 how many types of shell you know 
@@ -18,6 +18,13 @@ which services you know form AWS
 did you ever worked on azure and gcp
 do you know about jenkins
 where you maintain your code like version control management system
+ 
+Teradata 2nd Interview
+----------------------------------------------
+commands used inside vim editor like copy, paste and search
+awk commands uses 
+packaging commands based on distribution
+daily work involved with python coding and project work related questions
 
 --------------------------------------------------
 Cloud Elements 1st Round Technical questions (after clearing coding task 3 question (2 shell scripting + 1 python))
