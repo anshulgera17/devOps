@@ -25,6 +25,20 @@ $ git init --bare
 - Email: anshulgera17@gmail.com
 - .gitconfig file having details in ubuntu 
 
+## files in .git folder
+- COMMIT_EDITMSG
+- HEAD
+- config
+- description
+- index
+
+## folders in .git 
+- hooks
+- info
+- logs
+- objects
+- refs
+
 ## Configure git in terminal
 
 - `git config --global user.name “anshulgera17”`
