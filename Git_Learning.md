@@ -23,6 +23,7 @@ $ git init --bare
 
 - Username : anshulgera17
 - Email: anshulgera17@gmail.com
+- .gitconfig file having details in ubuntu 
 
 ## Configure git in terminal
 
