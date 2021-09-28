@@ -112,7 +112,43 @@ How to debug if i am unable to create file in Linux
 How to debug memory issue in linux
 What is ELK stack, how you can explain to your manager
 ------------------------------------------------------  
+Behavioural Questions for Interviews
+--------------------------------------------------
+Bias for action
+1. Tell me about a time you had to quickly adjust your work priorities to meet changing demands
+Teamwork/Interpersonal skills
+2. What did you do when you needed to motivate a group of individuals?
+3. Give me an example of a time you faced a conflict while working on a team. How did you handle that?
+4. The last time you had to apologize to someone
+5. Describe a long-term project that you managed. How did you keep everything moving along in a timely manner ?
+6. Describe a situation when you negotiated with others in your organization to reach an agreement
+Earn Trust
+7. Tell me about a time when you received negative feedback from your manager.How did you respond?
+Problem solving /Dive Deep
+8. Tell me about a time when you missed an obvious solution to a problem
+9. A time when you faced a problem that had multiple possible solution
+Strategy / Decision making
+10. Tell me about a time when you were 75% through a project & you had to pivot strategy 
+11. tell me about a time you had to deal with ambiguity
+12. tell me about the toughest decision you've had to make in the past six months
+Learn and be curious
+13. What's the most innovative new idea that you have implemented ?
+Ownership
+14. Tell me about a time stepped up into a leadership role
+15. Describe a time when you sacrificed short term goals for long term success
+16. Tell me about a time when had to push back to HQ or challenged a decision
+Customer obsession
+17. we all deal with difficult customers from time to time. tell me about a challenging client-facing situation and how you handled it
+Failure
+18. Tell me about a time when you were not able to meet a time commitment .
+What prevented you from meeting it? what was the outcome and what did you learn from it?
+19. tell me about a time you failed and what you learned from it.
 
+S - situation
+T - Task
+A - Action 
+R - Result
+-------------------------------------------------------------------------------------------------------------------------------------------
 Deployment Questions:
 what is a blue-green deployment ?
 How do you do a hot deployment ?
@@ -131,6 +167,7 @@ Production support related question:
 What is the biggest issue you have faced in a production environment ?
 What is your DR strategy in Live website ?
 How do you scale a production web service ?
+
 --------------------------------------------------------------------------------------------------------------------------------
 This information will also be used to generate list of devops skills that will make their way 
 
