@@ -1,3 +1,10 @@
+Teradata 2nd interview questions:
+----------------------------------------
+vi editor short cuts
+linux commands used in daily work
+sed, awk, grep command
+Jira ticket logging and how team is working 
+
 Teradata 1st Interview questions:
 -----------------------------------------------
 Linux:
