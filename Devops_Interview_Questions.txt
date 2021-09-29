@@ -1,3 +1,34 @@
+Amazon devOps support engineer Round 1st Interview:
+--------------------------------
+tell me about yourself and project details 
+write a script to add 2 digit number till it become a single digit
+tell me the linux commands which you are using in your project
+get Name from below data which are having hyd
+Name|city|name|address
+A | hyd | abcc | some
+A | Hyd | dsfs | asda
+B| asds | dsf | dsf
+C| hYD | dasfs| dsf
+
+Amazon DevOps support engineer round 2nd Interview:
+--------------------------------
+tell me about your project, and what is your day to day tasks
+Describe a time when you sacrificed short term goals for long term success
+describe more about your tasks what exact work have you done till now, or recently
+filter 3 log files and create something like dashboard from their processed data
+------------------------
+input:
+cpuandmemory.log
+hostname|timestamp|cpu|mem|disk
+networklatency.log
+hostname|networkspeed|ping
+filesize.log
+hostname|filename|filesize
+---------------------------------
+output something like this:
+hostname|average CPU(hr) | average mem(hr)| average networkspeed(hr)| average ping(hr) | largest file
+
+
 Teradata 2nd interview questions:
 ----------------------------------------
 vi editor short cuts
