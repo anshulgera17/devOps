@@ -10,6 +10,8 @@ A | Hyd | dsfs | asda
 B| asds | dsf | dsf
 C| hYD | dasfs| dsf
 
+how to replace 100's of file name extension from .jpg to .jpeg
+
 Amazon DevOps support engineer round 2nd Interview:
 --------------------------------
 tell me about your project, and what is your day to day tasks
