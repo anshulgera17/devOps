@@ -91,6 +91,13 @@
 - Datalab
 - Genomics
 
+## GCP Machine Learning Services
+- Cloud Machine Learning
+- Vision API
+- Speech API
+- Natural Language API
+- Translation API
+- Jobs API
 
 ## Storage classes
 
