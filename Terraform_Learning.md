@@ -31,6 +31,11 @@ resource "docker_image" "image_id" {
 - `terraform taint`
 - `terraform show`
 - `terraform console`
+- `terraform state list`
+- `terraform state show`
+- `terraform graph`
+- `terraform apply -auto-approve`
+- `terraform plan -destroy`
 
 ## variable in terraform
 
@@ -166,5 +171,18 @@ value = “${module.container.ip}”
 output “container_name”
 {
 value = “${module.container.container_name}”
+}
+```
+
+```
+resources
+provider "aws"{
+profile = "default"
+region = "us-west-2"
+}
+
+resource "aws_s3_bucket" "tf-course"{
+bucket = "buncket name---"
+acl = "private"
 }
 ```
