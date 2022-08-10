@@ -64,3 +64,4 @@ kubectl rollout history deployment nginx-deployment
 kubectl rollout undo deployment nginx-deployment --to-revision=x
 kubectl delete -f nginx-deployment.yaml
 ```
+- lens tool for kubernetes
