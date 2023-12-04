@@ -1,3 +1,22 @@
+Cognizant interview questions
+------------------------------
+explain what is process, from which command we can check.
+#! in linux
+what is zombie process.
+stages of a process.
+explain shebang line.
+how to resolve git conflict during merge.
+AWS instance type, S3 objects, which aws services you know, what is route 53, what is autoscaling, VPC, and load balancer.
+
+Persistent interview questions
+-----------------------------------
+how you can filter logs with some error code and some Description in python.
+what is jenkins, can you explain about jenkinsfile.
+how to write a jenkinsfile and explain components like you used to write. for download files at jenkins server then copy it to another server then how you execute code for IVST. 
+what is docker, can you explain how to write dockerfile and explain how layers work and which base image you use.
+explain command use in dockerfile.
+what is configmap in kubernetes.
+
 Amazon devOps support engineer Round 1st Interview:
 --------------------------------
 tell me about yourself and project details 
