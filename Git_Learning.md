@@ -74,6 +74,24 @@ $ git init --bare
 
 - `git commit -a -m “comment ”  -a` is used if we want to commit untracked file (means we didn’t run `git add` command and did the changes in file)
 
+- `git config --list` 
+- `git merge develop-branch`
+- `git checkout develop` go to develop branch
+- `git diff`
+- `git diff HEAD` 
+- `git diff --staged HEAD` check staged code and compare
+- `git diff commit_ID1 commit_ID2` compare between commits
+- `git diff HEAD HEAD^` compare with last commit
+- `git branch -m mybranch develop` 
+- `git branch -d develop` delete branch develop
+- `git reset HEAD~` revert back file
+- `git reset HEAD sample.txt` revert back file from staging
+- `git log --since="2 days ago"` logs based on time
+- `git log --oneline --graph --decorate` oneline logs
+- `git checkout --filename.txt` if file deleted then revert back
+- `git config --global alias.history "log --all --graph --decorate --oneline"`
+
+
 ## Git Commands
 
 - `git config`
