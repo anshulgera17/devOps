@@ -1,3 +1,22 @@
+Deutsche telekom interview questions
+--------------------------------------
+explain me about your day-to-day tasks not projects.
+what is docker, dockerfile and components in dockerfile.
+difference between cmd and entrypoint
+difference between copy and add
+tell me any example of dockerfile with its component
+what is docker build command
+if i delete docker container will it re-run itself ?
+
+what is jenkins
+who configured master and slave architecture in your company
+which language you used to jenkinsfile. 
+do you know groovy language.
+declarative vs scripted pipeline.
+
+filter IP address from 3 lines of text data in any coding language like shell or python or java.
+which AWS services you used.
+
 Cognizant interview questions
 ------------------------------
 explain what is process, from which command we can check.
