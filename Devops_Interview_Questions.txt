@@ -1,3 +1,12 @@
+CGI interview:
+--------------------
+terraform version which you used
+terraform modules you used 
+where you can keep secret keys in terraform
+tell me about terraform state file
+terraform secrets
+write a jenkins file for build, test, package, and archive 
+
 Deutsche telekom interview questions
 --------------------------------------
 explain me about your day-to-day tasks not projects.
