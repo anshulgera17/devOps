@@ -1,3 +1,15 @@
+zensar technologies
+-------------------
+ansible tower ?,  ansible-galaxy ?, ansible objects ?
+explain ansible playbook
+
+types of inheritance in python
+How Python manages memory management
+Write Fibonacci series code 
+what are decorators in python
+what is generators in Python
+how to delete a file in python
+
 CGI interview:
 --------------------
 terraform version which you used
