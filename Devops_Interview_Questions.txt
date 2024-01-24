@@ -1,19 +1,19 @@
 Luxoft technology Interview
 ----------------------------
-write a code in python for check file is present or not
+write a code in Python for check file is present or not
 aws cloudformation, vpc peering, how to connect different network or hybrid system.
 what parameters we have to consider during migration from on-premises to cloud.
-blue-green deployment, and what other types of deployment.
-kubernetes scheduler ?
-explain ci-cd workflow or flow you implemented in your system.
+explain the ci-cd workflow or flow you implemented in your system.
 types of load-balancers ?
-which RDS services you used ?
+what is the target group in AWS ?
 Have you used AWS Lambda service ?
-how you deploy application from ci-cd ?
-how an request goes from network or servers or services in cloud and how response goes ?
-internet gateway works with multiple networks.
-how you did database migration in AWS ?
-what is target group in AWS ?
+how do you deploy applications from ci-cd ?
+how does a request go from a network or servers or services in the cloud and how the response goes?
+how internet gateway works with multiple networks.
+how do you do database migration in AWS?
+which RDS services have you used?
+blue-green deployment, and what other types of deployment.
+Kubernetes scheduler ?
 
 zensar technologies
 -------------------
