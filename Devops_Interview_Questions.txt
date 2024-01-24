@@ -1,3 +1,18 @@
+Luxoft technology Interview
+----------------------------
+write a code in python for check file is present or not
+aws cloudformation, vpc peering, how to connect different network or hybrid system.
+what parameters we have to consider during migration from on-premises to cloud.
+blue-green deployment, and what other types of deployment.
+kubernetes scheduler ?
+explain ci-cd workflow or flow you implemented in your system.
+types of load-balancers ?
+which RDS services you used ?
+Have you used AWS Lambda service ?
+how you deploy application from ci-cd ?
+how an request goes from network or servers or services in cloud and how response goes ?
+internet gateway works with multiple networks.
+
 zensar technologies
 -------------------
 ansible tower ?,  ansible-galaxy ?, ansible objects ?
