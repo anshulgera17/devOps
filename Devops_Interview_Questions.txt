@@ -1,4 +1,18 @@
-Luxoft technology Interview
+Altimetrik round 1 interview
+----------------------------
+what is shell, and types of shell you used?
+How to unzip a .gz file
+chmod command, ssh, scp 
+what is curl command
+can you write python code which display message at particular interval continueously.
+what is ci-cd and explain about jenkins, explain jenkinsfile?
+which version control systems you used?
+Have you ever used ansible, ever wrote ansible playbook, explain.
+which cloud you worked on, which AWS services you used?
+have you ever worked for migration from on-premises to cloud?
+
+
+Luxoft technology Interview 
 ----------------------------
 write a code in Python for check file is present or not
 aws cloudformation, vpc peering, how to connect different network or hybrid system.
