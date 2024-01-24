@@ -13,6 +13,7 @@ how you deploy application from ci-cd ?
 how an request goes from network or servers or services in cloud and how response goes ?
 internet gateway works with multiple networks.
 how you did database migration in AWS ?
+what is target group in AWS ?
 
 zensar technologies
 -------------------
