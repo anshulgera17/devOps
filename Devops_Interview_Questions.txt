@@ -11,7 +11,7 @@ which version control systems you used?
 Have you ever used ansible, ever wrote ansible playbook, explain.
 which cloud you worked on, which AWS services you used?
 have you ever worked for migration from on-premises to cloud?
-
+What is scope in python
 
 Luxoft technology Interview 
 ----------------------------
