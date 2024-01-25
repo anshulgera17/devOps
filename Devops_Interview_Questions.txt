@@ -5,6 +5,7 @@ How to unzip a .gz file
 chmod command, ssh, scp 
 what is curl command
 can you write python code which display message at particular interval continueously.
+can you write code in python to copy data in another server.
 what is ci-cd and explain about jenkins, explain jenkinsfile?
 which version control systems you used?
 Have you ever used ansible, ever wrote ansible playbook, explain.
