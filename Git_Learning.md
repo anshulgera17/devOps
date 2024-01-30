@@ -1,14 +1,5 @@
 # Git commands use, learning data and questions for interview
 
-- Q1. What is SCM ?
-- Q2. What is difference between git and svn ?
-- Q3. What is Git ?
-- Q4. What is the command to write a commit message in Git ?
-- Q5. What is bare repository in Git ?
-- Q6. What language used in Git ?
-- Q7. In Git how do you revert the commit that has already been pushed and made public ?
-- Q8. What is the difference between git pull and git fetch ?
-- Q9. What is ‘staging area’ 
 
 ## GIT FUNDAMENTALS
 
