@@ -10,6 +10,150 @@
 - Q8. What is the difference between git pull and git fetch ?
 - Q9. What is ‘staging area’ 
 
+G I T F U N D A M E N T A L S
+🤔 Who invented Git and why? 
+🗜️ What are the prerequisites to install Git?
+👨👦How would you explain Git to a 5 year old? 
+🐍How would you explain Git to a Python developer? 
+🏦 What is a Git repository?
+🏦What are the different states a file can be in according to the "git status" command?
+🔨 What does BASH in stand for?
+🆚 How would you compare Git to a traditional version control tool like CVS?
+😱 How do you exit VIM?
+🖼️ What is the purpose of Git GUI?
+💻 Are there any types of files you can't commit to Git?
+📦 What does a Git repository typically contain?
+📦 How can you tell if a folder contains a Git repository?
+🌐 Is there a difference between a local and a remote Git repo?
+📁 What is unique about a bare repo?
+🏗️ How do you create or initialize a bare repository?
+📋 What is a clone in Git? How do you clone a remote repo?
+🍴 What is a fork? Is a fork part of Git?
+🤝 Name three popular Git GUI tools.
+C O M M O N G I T C O M M A N D S
+📛Name some git commit message best practcies.
+🧩Why must you add files to the Git Index?
+➕ What does the "git log" command do?
+➖ What does the "git reflog" command do?
+🐶 What does it mean to 'git log a dog?'
+✅ What common switches are used with the commit command?
+📂 How would you explain the Git index to a 5 year old?
+🧩 How do you undo the previous commit?
+🔀 What does "git commit -a" do?
+🔀 Can "git commit -a" be used with new files?
+🏗️What two properties must be set in your config before a commit can take place?
+🍀Name four Git config scopes.
+🔄 Explain the commit workflow in Git.
+⚙️ Where is Git configuration stored?
+📤 Does Git support pull requests?
+📦 Can you revert a single file from a commit?
+🎁 What's the difference between revert and reset?
+📝 How do you find a listing of files that were included in a commit?
+🔄 What does it mean to squash a commit?
+🔄 When would you issue a "git pull"?
+🔄 What does origin typically refer to?
+🔄 What impact does a fetch have on your local worktree?
+⏪ What happens to files in the index during a soft reset?
+⏪ What happens to files in the index during a hard reset?
+⏪ What happens to files in the working tree during a mixed reset?
+🔀 When would you use pull vs fetch?
+🔀 Why might a git pull be rejected?
+G I T B R A N C H I N G
+🌿 What is a branch in Git?
+🌿 What is a 'topic branch?'
+🌿 How do Git branches support isolated development?
+🌿 What is special about the master branch?
+🌿 Can you delete the master branch?
+🌿 Does Git support branch protection?
+🌿 What does HEAD represent in Git?
+🌿 What is a detached HEAD?
+🌿 How do you clone a specific branch?
+🌿 How do you clone a specific commit?
+🌿 How do you fix a detached HEAD?
+🌿 Why has the master branch been renamed to main?
+🌿 How do you delete a Git branch?
+🌿 Is it possible to recover a deleted branch?
+🌿 How do you create a new Git branch?
+🌿 Can the tip of two branches share the same commit id?
+🌿 What are "remote tracking branches" in Git?
+🍒 When do you use a "git cherry-pick"?
+🍒 Can you "git cherry-pick" a commit from the same branch?
+🍒 What's the relationship between a revert and a cherry-pick?
+M E R G E S T R A T E G I E S & C O N F L I C T S
+🔀 When should a developer merge code?
+🔀 Can you merge code within the same branch?
+🔀 What would trigger a merge conflict?
+🔀 Explain to me how you go about resolving a merge conflict.
+🔧 Explain to me what an octopus merge strategy does as if I was a 5 year old.
+🛠️ What happens to files that are problematic during a mere conflict.
+🔧 Explain to me what a recursive merge strategy does like I was a Python developer.
+🛠️ How do you abort a commit when there is a merge conflict.
+🔧 Explain the 'ours merge strategy' to me.
+🔧 How do you permanentaly resolve a merge conflict?
+🐰 Compare and contrast a merge vs a rebase.
+⚙️ What are different merge strategies?
+🔧 What is a fast forward merge? 
+🔧 How do you turn fast-forward merging off?
+🔧 Explain resolve merge strategy to me like I was a Python developer.
+🔧 Explain the subtree merge strategy to me like I was a Python developer.
+T A G S
+🏷️ What is a Git tag and when should you use one?
+🏷️ What does "git tag" do to your commit history?
+🏷️ Can you reset to a Git tag?
+S W I T C H E S & H O O K S
+⏬ What does the "git checkout" command do?
+⏬ What does the "git switch" command do?
+⏬ Which should you use, checkout or switch?
+⚙️ What is a Git hook?
+⚙️ What type of event can trigger a Git hook?
+A D V A N C E D G I T 
+📊 When would you use the 'git diff' command?
+📄 What happens when a file already added to the repo is added to the .gitignore file?
+🏎️ Compare and contrast a fast forward merge with a recursive merge
+🌿 Name two key benefits Git's branch model provides developers.
+📜 What does 'git log a dog' mean?
+🔀 What is the effect a Git merge has on the commit history when compared to a Git rebase?
+📊 Why is a rebase safer than a forced push?
+🔙 What's the difference between a revert and reset?
+🔍 When would you use Git's "blame" command?
+📦 When would you use a Git submodule?
+📦 When would clone a Git repo, are all of the submodules clones as well?
+⏪ What happens when you ammend a commit?
+🔄 What's the difference between "git clone" and "git pull?"
+🧠 What's the difference between HEAD and a commit id?
+🔍 What is the difference between git log and reflog?
+🔄 What does the Git clean command do?
+🔄 How would you remove all untracked files in Git?
+🔍 When would you use the "git bisect" command?
+G I T S T A S H
+🧺 When would you use the Git Stash command?
+🧺 How do you create a Git stash?
+🧺 What files are affected by the Git stash command?
+🧺 When would you use the "git stash apply" command?
+🧺 What's the difference between "git stash pop" and "git stash apply?"
+🧺 When would you drop a Git stash?
+🧺 What does "git stash list" do?
+🧺 Can you pop a Git stash by its name?
+G I T & G I T H U B
+🐙 What's the difference between Git and GitHub?
+🐙 Who owns GitHub?
+🐙 Name three features GitHub provides that Git does not.
+🐙How do you push an existing project to GitHub?
+🐙How do you clone a GitHub repo over HTTP?
+🐙What is a GitHub access token and how do you create one?
+🐙 How do you push a new local branch to an existing GitHub repo?
+🐙 What is required to authenticate to GitHub with SSH?
+🐙What's the difference between GitHub and GitLab?
+🐙Why might a company choose BitBucket over GitHub?
+🐙 How can you view the commit history of a specific file in GitHub?
+🐙What's the difference between a fork and a clone?
+G I T W O R K F L O W S
+🚧 What are the benefits of using a branch strategy like GitFlow?
+🚧 Briefly explain how GitFlow works?
+🎉 Why would a team use GitHub Flow?
+🎉 What's the difference between GitHub Flow and GitLab Flow?
+🤔 What two branches are never deleted in GitFlow?
+
 ## Git Configuration in ec2 instance
 
 ```
