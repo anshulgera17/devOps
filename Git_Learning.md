@@ -10,7 +10,7 @@
 - Q8. What is the difference between git pull and git fetch ?
 - Q9. What is ‘staging area’ 
 
-## G I T F U N D A M E N T A L S
+## GIT FUNDAMENTALS
 
 -  Who invented Git and why? 
 -  What are the prerequisites to install Git?
@@ -32,7 +32,7 @@
 -  What is a fork? Is a fork part of Git?
 -  Name three popular Git GUI tools.
 
-## C O M M O N G I T C O M M A N D S
+## COMMON GIT COMMANDS
 
 -  Name some git commit message best practcies.
 -  Why must you add files to the Git Index?
@@ -62,7 +62,7 @@
 -  When would you use pull vs fetch?
 -  Why might a git pull be rejected?
 
-## G I T B R A N C H I N G
+## GIT BRANCHING
 
 -  What is a branch in Git?
 -  What is a 'topic branch?'
@@ -85,7 +85,7 @@
 -  Can you "git cherry-pick" a commit from the same branch?
 -  What's the relationship between a revert and a cherry-pick?
 
-## M E R G E S T R A T E G I E S & C O N F L I C T S
+## MERGE STRATEGIES & CONFLICTS
 
 -  When should a developer merge code?
 -  Can you merge code within the same branch?
@@ -103,18 +103,22 @@
 -  How do you turn fast-forward merging off?
 -  Explain resolve merge strategy to me like I was a Python developer.
 -  Explain the subtree merge strategy to me like I was a Python developer.
-T A G S
+
+## TAGS
+
 -  What is a Git tag and when should you use one?
 -  What does "git tag" do to your commit history?
 -  Can you reset to a Git tag?
-S W I T C H E S & H O O K S
+
+## SWITCHES & HOOKS
+
 -  What does the "git checkout" command do?
 -  What does the "git switch" command do?
 -  Which should you use, checkout or switch?
 -  What is a Git hook?
 -  What type of event can trigger a Git hook?
 
-## A D V A N C E D G I T 
+## ADVANCED GIT 
 
 -  When would you use the 'git diff' command?
 -  What happens when a file already added to the repo is added to the .gitignore file?
@@ -135,7 +139,7 @@ S W I T C H E S & H O O K S
 -  How would you remove all untracked files in Git?
 -  When would you use the "git bisect" command?
 
-## G I T S T A S H
+## GIT STASH
 
 -  When would you use the Git Stash command?
 -  How do you create a Git stash?
@@ -146,7 +150,7 @@ S W I T C H E S & H O O K S
 -  What does "git stash list" do?
 -  Can you pop a Git stash by its name?
 
-## G I T & G I T H U B
+## GIT & GITHUB
 
 -  What's the difference between Git and GitHub?
 -  Who owns GitHub?
@@ -161,7 +165,7 @@ S W I T C H E S & H O O K S
 -  How can you view the commit history of a specific file in GitHub?
 -  What's the difference between a fork and a clone?
 
-## G I T W O R K F L O W S
+## GIT WORKFLOWS
 
 -  What are the benefits of using a branch strategy like GitFlow?
 -  Briefly explain how GitFlow works?
