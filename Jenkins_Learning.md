@@ -1,13 +1,9 @@
 # Jenkins setup and learning
 
-- Q1. What is Jenkins ?
-
-## Answer
-
 - An open source automation server which enables developers around the world to reliably build, test, and deploy their software.
   
 ## Interview Questions
-
+- What is Jenkins ?
 - which tool have you used for implement CI/CD?
 - Any alternate tool do you know for CI/CD ?
 - what is continuous Integration?
@@ -25,6 +21,17 @@
 - what is sonarqube? have you configure, how you configure?
 - what type of artifactory repository tool have you used?
 - what is the use of artifactory tools ?
+- How you declare a variable in pipeline ?
+- what is DSL language?
+- what is upstream / downstream projects? what is the use of it? which Scenario you configure ?
+- Do you have experience to install Jenkins ?
+- How you Configure Jdk, maven, gradle etc?
+- In my environment I have different version of for java implementation projects is there. How you configure multiple jdk's?
+- what are the plugins have you used in your project?
+- How to take backup my jenkins? thin backup plugin
+- what is jenkins Home directory?
+- How to delete old build automatically.
+- How to configure multiple environment deployment.
 
 ## LearningJenkins
 
