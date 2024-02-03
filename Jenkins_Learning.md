@@ -5,6 +5,26 @@
 ## Answer
 
 - An open source automation server which enables developers around the world to reliably build, test, and deploy their software.
+  
+## Interview Questions
+
+- which tool have you used for implement CI/CD?
+- Any alternate tool do you know for CI/CD ?
+- what is continuous Integration?
+- what type of jobs have you configured in jenkins?
+- what are the types of jobs are available in jenkins ?
+- what is difference between freestyle and pipeline?
+- what is pipeline?
+- what is declarative pipeline?
+- what is the diff between declarative pipeline and script based pipeline?
+- write the pipline syntax?
+- what is master/slave architecture?
+- what is the use of master/slave?
+- How many we can connect the slaves?
+- How many ways we can provide security for your jenkins server?
+- what is sonarqube? have you configure, how you configure?
+- what type of artifactory repository tool have you used?
+- what is the use of artifactory tools ?
 
 ## LearningJenkins
 
