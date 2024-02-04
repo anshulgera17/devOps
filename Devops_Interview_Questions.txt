@@ -1,3 +1,23 @@
+Lyods technology - karat took the interview
+------------------------------------------
+scenario based interview questions
+choose which cloud platform you are comfortable - I choose AWS
+need to configure 100 servers which are having db servers and web servers as well as which AWS service will you use.
+which storage services are their in AWS
+which services for create server in aws
+
+how many deployment strategies do you know 
+pros and cons of that deployment strategy
+for the small organization if they use Kubernetes and docker swarm what are the pros and cons in this case?
+
+i was not able to answer Splunk and Dynatrace and ServiceNow 5 questions in 1 section.
+
+bash scenario-based question 
+like filter logs which command can you use and save them in a particular file 
+download data from the web and automate the process 
+the question was already having some code written I have to debug the error or what was wrong with that, and the same scenario I had to repeat for multiple databases.
+
+
 Altimetrik round 1 interview
 ----------------------------
 what is shell, and types of shell you used?
