@@ -10,6 +10,7 @@ database migration services
 how many deployment strategies do you know 
 pros and cons of that deployment strategy
 what services will you use for security and compliance
+if environment is fragile then how are the deployment issues you might face. 
 A vpc having 1 private subnet is their with 10.0.0.1/24 and NAT gateway is also their, what is the issue in this case what would you add in this environment.
 for the small organization if they use Kubernetes and docker swarm what are the pros and cons in this case?
 
