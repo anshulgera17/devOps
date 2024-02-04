@@ -8,6 +8,7 @@ which services for create server in aws
 
 how many deployment strategies do you know 
 pros and cons of that deployment strategy
+what services will you use for security and compliance
 for the small organization if they use Kubernetes and docker swarm what are the pros and cons in this case?
 
 i was not able to answer Splunk and Dynatrace and ServiceNow 5 questions in 1 section.
