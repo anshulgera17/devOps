@@ -5,6 +5,7 @@ choose which cloud platform you are comfortable - I choose AWS
 need to configure 100 servers which are having db servers and web servers as well as which AWS service will you use.
 which storage services are their in AWS
 which services for create server in aws
+difference between spot and on-demand instance
 database migration services 
 
 how many deployment strategies do you know 
