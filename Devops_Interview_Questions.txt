@@ -1,3 +1,16 @@
+SpanIdea - for Broadcom
+-------------------------
+write code for upload daily backup in aws and create backup also, and check file size and other checks
+how to connect aws from code, what steps we have to take for that, where we have to keep the access and secret keys.
+can we access ec2 instance without attaching vpn
+if cpu utilization is more how you will do the debug 
+which tool you will use to copy data from ubuntu to windows
+explain git branch
+diff between git pull and git fetch
+how to identify the static and dynamic process in linux.
+have you ever used any other svn systems
+
+
 Lyods technology - karat took the interview
 ------------------------------------------
 scenario based interview questions
