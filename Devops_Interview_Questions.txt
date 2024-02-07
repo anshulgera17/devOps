@@ -9,7 +9,7 @@ explain git branch
 diff between git pull and git fetch
 how to identify the static and dynamic process in linux.
 have you ever used any other svn systems
-
+if multiple users are having access to aws ec2 instance and 1 user will change file permission then how to track which user did the change. 
 
 Lyods technology - karat took the interview
 ------------------------------------------
