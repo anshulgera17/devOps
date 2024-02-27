@@ -1,3 +1,17 @@
+Capgemini
+------------
+explain your previous experience, how you utilize your time after graduation.
+how you started working for devops tools in your previous company.
+how python code going to execute, class, function, constructor
+python list and tuple difference
+what is dictionary in python
+what is decorators and generators in python
+what is ansible 
+how ansible works
+how you use ansible playbook command for execute particular playbook
+how ansible inventory works
+where hosts file found in ansible
+
 SpanIdea - for Broadcom
 -------------------------
 write code for upload daily backup in aws and create backup also, and check file size and other checks
