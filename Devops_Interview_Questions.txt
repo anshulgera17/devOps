@@ -1,3 +1,14 @@
+Iris Software
+--------------
+What is Ansible tower.
+How to limit number of hosts for execution of tasks in Ansible.
+Have you ever worked in Ansible Tower.
+can you write playbook for create a file in node and check the file is created or not.
+
+what is DSL job in jenkins
+define types of parameters in jenkins
+what is diff between string and persistent string parameter in jenkins.
+
 Capgemini
 ------------
 explain your previous experience, how you utilize your time after graduation.
