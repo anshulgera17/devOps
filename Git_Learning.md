@@ -6,9 +6,7 @@
 -  Who invented Git and why? 
 -  What is a Git repository?
 -  What are the different states a file can be in according to the "git status" command?
--  What does BASH in stand for?
 -  How would you compare Git to a traditional version control tool like CVS?
--  How do you exit VIM?
 -  What is the purpose of Git GUI?
 -  Are there any types of files you can't commit to Git?
 -  What does a Git repository typically contain?
