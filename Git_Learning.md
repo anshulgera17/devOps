@@ -4,9 +4,6 @@
 ## GIT FUNDAMENTALS
 
 -  Who invented Git and why? 
--  What are the prerequisites to install Git?
--  How would you explain Git to a 5 year old? 
--  How would you explain Git to a Python developer? 
 -  What is a Git repository?
 -  What are the different states a file can be in according to the "git status" command?
 -  What does BASH in stand for?
