@@ -1,3 +1,14 @@
+Tata Technology (CI and python interview)
+----------------------------------------
+write code in python to get the median of a=[1,2], b=[3]
+write code in python for n2 +(n-1)2 +(n-2)2 +-------- 1
+which jenkins parameters you know
+how to use or get code in git when you don't have access 
+jenkins scripted and declarative pipeline difference
+can you explain jenkins pipelines 
+can you explain docker file stages
+docker entrypoint keyword 
+
 Iris Software
 --------------
 What is Ansible tower.
