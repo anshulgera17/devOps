@@ -14,7 +14,7 @@ Keysight interview questions
 explain about your projects you worked 
 how much time the transcoding took
 python related interview questions like decorator, which library used, wrote oops based code.
-
+do you know how to use type annotation in python
 
 Iris Software
 --------------
