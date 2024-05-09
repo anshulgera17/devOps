@@ -1,3 +1,9 @@
+Global Logic perl/shell scripting 
+--------------------------------
+write code to find last 10 bytes of a file date
+write a code which create 10 files, if we execute again then again create 10 files
+write above questions codes in perl and shell script both, if you are able to write then python also.
+
 Tata Technology (CI and python interview)
 ----------------------------------------
 write code in python to get the median of a=[1,2], b=[3]
