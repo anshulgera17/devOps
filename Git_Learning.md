@@ -20,12 +20,10 @@
 ## COMMON GIT COMMANDS
 
 -  Name some git commit message best practices.
--  Why must you add files to the Git Index?
 -  What does the "git log" command do?
 -  What does the "git reflog" command do?
 -  What does it mean to 'git log a dog?'
 -  What common switches are used with the commit command?
--  How would you explain the Git index to a 5 year old?
 -  How do you undo the previous commit?
 -  What does "git commit -a" do?
 -  Can "git commit -a" be used with new files?
