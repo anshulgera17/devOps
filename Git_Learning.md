@@ -19,7 +19,7 @@
 
 ## COMMON GIT COMMANDS
 
--  Name some git commit message best practcies.
+-  Name some git commit message best practices.
 -  Why must you add files to the Git Index?
 -  What does the "git log" command do?
 -  What does the "git reflog" command do?
