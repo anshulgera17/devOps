@@ -1,3 +1,22 @@
+Incedo Ansible/python profile 1st Round
+-----------------------------------------
+python 2 lists which way you are going to sort them, and which algorithm you will use
+you know about time complexity, and whats the time complexity for search item in list
+what is git
+can you tell me which git commands you used in your work
+can you explain branching strategy for large organization
+can we implement ci-cd in git
+what is docker, dockerfile, can we implement ci-cd in docker
+docker swarm commands 
+How ansible works 
+ansible advantages
+how ansible playbook works or how to write
+how to test any ansible project
+how terraform works
+what is terraform state file
+what is terraform init
+
+
 Global Logic perl/shell scripting 
 --------------------------------
 write code to find last 10 bytes of a file date
