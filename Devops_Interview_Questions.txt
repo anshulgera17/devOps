@@ -1,3 +1,13 @@
+Accenture Interview 
+------------------------
+which services you used from AWS
+Types of instances in AWS
+How to migrate the organization storage to AWS, he mentioned some hardware also
+How to migrate an web application from an organization to AWS we have plan for long term usgage so how you select AWS instance.
+If we have 2 public subnets with web and database server how you make sure database not accesible from internet.
+What is the difference between NACL rules and Security group.
+
+
 Incedo Ansible/python profile 1st Round
 -----------------------------------------
 python 2 lists which way you are going to sort them, and which algorithm you will use
