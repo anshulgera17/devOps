@@ -1,3 +1,24 @@
+Hiresnap/Indigo DevOps interview
+------------------------------------
+$#, $@, $* use in shell script
+process and memory status using which command
+what is crontab how to use it
+what is version control system
+what is merge in git
+what is configuration management
+why are we using kubernetes
+what is difference between docker swarm and kubernetes
+what is continueous delivery and continueous deployment
+what monitoring tools you used 
+what is iac?, which tool you used for iac
+what is difference between canary and rolling update deployment
+what is blue-green deployment
+what services you used in AWS
+what is string and group in aws cloudwatch
+what is difference between cloudtrail and cloudwatch
+what is use of vpc and security group
+
+
 Accenture Interview 
 ------------------------
 which services you used from AWS
