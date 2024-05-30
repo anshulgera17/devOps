@@ -16,6 +16,7 @@ what is blue-green deployment
 what services you used in AWS
 what is string and group in aws cloudwatch
 what is difference between cloudtrail and cloudwatch
+What is the difference between SNS and SQS service
 what is use of vpc and security group
 
 
