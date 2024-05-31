@@ -3,6 +3,7 @@ Hiresnap/Indigo DevOps interview
 $#, $@, $* use in shell script
 process and memory status using which command
 what is crontab how to use it
+what is difference between softlink and hardlink
 what is version control system
 what is merge in git
 what is configuration management
