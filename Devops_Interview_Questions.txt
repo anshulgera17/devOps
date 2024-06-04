@@ -1,3 +1,20 @@
+Global Logic for perl/xslt/python Interview
+-----------------------------------
+what is cron job, have you write it yourself the code for it
+how to make any shell script executable
+what are builtin data types in python
+what is difference between sets and tuple
+what is lambda function in python
+can you write code for find the common element from 2 lists
+which library i have to use for xml in python
+how to open file in perl 
+how to define variable in perl
+how to import file in perl
+can you explain what is xslt
+can you explain xpath and xquery in xslt
+how we can keep secret keys in python or shell scripting so other person can't see
+
+
 Hiresnap/Indigo DevOps interview
 ------------------------------------
 $#, $@, $* use in shell script
