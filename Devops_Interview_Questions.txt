@@ -2,6 +2,7 @@ Global Logic for perl/xslt/python Interview
 -----------------------------------
 what is cron job, have you write it yourself the code for it
 how to make any shell script executable
+which command will you use to create a file in linux
 what are builtin data types in python
 what is difference between sets and tuple
 what is lambda function in python
