@@ -1,3 +1,19 @@
+BNY Mellon Ansible/python interview
+---------------------------------------
+Ansible hosts, is ansible stops after it fail on particular host or continues
+If i want to test some ansible playbook, how i can do that like what is going to change
+if i want to call ansible for other user, how can i do that
+what is workflow and what is project workflow
+python code for getting data from config.ini and check for specific data which module will you use
+how do you handle multiple python versions
+how extensively you used python and which codes do you wrote during work
+which data structures you used in python, give some examples
+do you know about virtual environment
+have you worked on rest api 
+can you tell me which typical situation you faced during your work 
+what is threading in python, and tell me what is the use case for it, or is it beneficial to use (pros/cons).
+
+
 Global Logic for perl/xslt/python Interview
 -----------------------------------
 what is cron job, have you write it yourself the code for it
