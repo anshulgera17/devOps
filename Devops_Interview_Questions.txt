@@ -1,5 +1,6 @@
 BNY Mellon Ansible/python interview
 ---------------------------------------
+Can you tell me the features of python
 Ansible hosts, is ansible stops after it fail on particular host or continues
 If i want to test some ansible playbook, how i can do that like what is going to change
 if i want to call ansible for other user, how can i do that
