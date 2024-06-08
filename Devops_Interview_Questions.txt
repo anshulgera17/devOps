@@ -1,3 +1,23 @@
+Incedo Interview Python/DevOps
+----------------------------------
+how to compare two file which are present in 2 vm's which modules will you use
+for opensuse how you compile code using python
+what is setup.py in python
+what is wheel in python
+how can you make your python code accessable to whole vm 
+what is the pros/cons of subprocess in python
+how ansible know that some of the packages already installed and other are not installed, mapping ?
+what is the structure of directories if we are developing any tools in python
+what is docker image
+how docker build images, what its internal working from dockerfile
+what factors we have to consider while creating docker image
+what is the difference in alpine or ubuntu base image in docker when to use which image
+if i am inside aws ec2 instance how can i check the metadata of that instance or where i can find it
+what is IAM in AWS
+how you use AWS IAM
+what is the difference in user role and service role in AWS
+
+
 BNY Mellon Ansible/python interview
 ---------------------------------------
 Can you tell me the features of python
