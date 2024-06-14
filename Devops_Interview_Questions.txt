@@ -1,3 +1,15 @@
+Realpage Interview
+-------------------
+AWS services you worked on.
+AWS EC2 instance is not connecting from AWS s3
+what is kubernetes deployment and stateful sets
+how you did eks setup
+how you keep secrets keys or string in kubernetes
+have you worked on Terraform
+how we can remove duplicate items in python
+which type of scripts you wrote till now
+
+
 Incedo Interview Python/DevOps
 ----------------------------------
 how to compare two file which are present in 2 vm's which modules will you use
