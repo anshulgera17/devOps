@@ -8,6 +8,8 @@ how you keep secrets keys or string in kubernetes
 have you worked on Terraform
 how we can remove duplicate items in python
 which type of scripts you wrote till now
+which monitoring service you used till now in kubernetes.
+if i want to send notification to users how can i do that using kubernetes
 
 
 Incedo Interview Python/DevOps
