@@ -1,3 +1,20 @@
+Accenture cloud migration role 
+---------------------------------
+Which services you used in AWS
+how to connect private subnet to public subnet
+how an web application works and send data back from webapplication and database in AWS which services going to use.
+can we limit access of services for particular users in AWS, which service we have to use.
+can we downsize the RDS database and how we can do that
+how we can connect from one vpc to another vpc do we need to accept something
+what is mapping and parameters in cloudformation templates
+how you are using cloudformation templates
+what is AWS loadbalancer
+what is NAT
+difference between NACL rules and security group
+how you going to create snapshot or vm image and use it in AWS
+after using aws image do we need to mount if previously it is mounted or do we need to up the services
+have you used any AWS CI/CD service
+
 Realpage Interview
 -------------------
 AWS services you worked on.
