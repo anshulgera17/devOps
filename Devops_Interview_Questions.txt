@@ -1,3 +1,13 @@
+Sutherland Global L1 round
+---------------------------
+get special character from string
+get common element from 2 lists
+what you did for artifactory migration is it a upgrade?
+what upgrade and migration ?
+what you did in kubernetes
+what is namespace in kubernetes
+
+
 Accenture cloud migration role 
 ---------------------------------
 Which services you used in AWS
