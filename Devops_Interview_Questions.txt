@@ -1,3 +1,25 @@
+Sutherland Global 2nd Round
+-----------------------------
+which linux commands you used ?
+what is cut command use?
+what is awk command use?
+have you used git, can you explain git commands which you used ?
+what is git reset, if i went back to 5 commits what will happen.
+how i can pull another branch in different branch repository
+have you used any iac, what is terraform, what is the modules of terraform?
+have you used AWS, which services you used in AWS?
+how you create some instance in aws tell me the steps?
+how you use jenkins in your project?
+have you used any shared libraires in jenkins ?
+how to create pipelines for build, test, deploy tell me the steps ?
+how you do a junit testing in maven in this pipeline ?
+tell me the commands for docker image create, container start & kill.
+how ansible works? control node and manage nodes?
+where we can define hosts/servers in ansible?
+what exactly you used ansible for ?
+other then dockerhub where we can keep our docker images?
+
+
 Sutherland Global L1 round
 ---------------------------
 get special character from string
