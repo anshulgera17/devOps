@@ -11,6 +11,7 @@ what is fork in ansible
 how you pull a roles in ansible from command line
 what is difference between default and vars directory in roles
 can you write how to define a variable in playbook
+for environment variable setup which ansible module will you use 
 
 Sutherland Global 2nd Round
 -----------------------------
