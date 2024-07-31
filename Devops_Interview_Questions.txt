@@ -1,5 +1,7 @@
 EY Interview for Ansible-python
 -----------------------------------
+what is __init__ in python
+what we have to write in python script in intial lines
 how can you increase the hosts limit in ansible more then 100
 what is ansible tower
 can you write playbook for install 3 packages using loops
