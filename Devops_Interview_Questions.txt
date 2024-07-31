@@ -1,3 +1,17 @@
+EY Interview for Ansible-python
+-----------------------------------
+how can you increase the hosts limit in ansible more then 100
+what is ansible tower
+can you write playbook for install 3 packages using loops
+can you write code for python list filters, give list to split or filter
+can you write fibonacci series in python
+can you tell me what you mostly wrote in ansible playbooks
+can you write how you use jinja templates in ansible
+what is fork in ansible
+how you pull a roles in ansible from command line
+what is difference between default and vars directory in roles
+can you write how to define a variable in playbook
+
 Sutherland Global 2nd Round
 -----------------------------
 which linux commands you used ?
