@@ -1,3 +1,26 @@
+Impact analytics DevOps Interview
+--------------------------------------
+what is diff b/w NAT gateway and Internet gateway
+what is diff b/w application loadbalancer and network loadbalancer
+what is the diff b/w CMD and ENTRYPOINT in docker
+how can be modify ENTRYPOINT in docker
+how will you manage the old data and where will you keep it in Cloud
+how you connect different cloud environment vpc's
+how to define outbound rules for particular port to connect
+assume role in iam 
+what is diff b/w node port and load balancer in kubernetes
+what is readyness probe and liveliness probe in kubernetes
+if any container is stopped how you make sure it is will re-create in kubernetes
+what we have to consider while writing Dockerfile
+how can be connect to docker container and modify it, then later on keep that change in new docker image
+what is include module in ansible
+what is ansible block
+which modules you used in ansible till now, how can you connect aws from ansible
+what is async function in python
+how you used logging, which tools you used
+how you setup 1000 nodes looging in prometheuos
+
+
 EY Interview for Ansible-python
 -----------------------------------
 what is __init__ in python
