@@ -2,7 +2,7 @@ Loyalty Methods Devops Interview
 ----------------
 which services you used in AWS
 What is AWS ECS and EKS 
-how to use cloudformation templates 
+how to implement cloudformation templates 
 what is cloudformation template stack policies
 can you explain about AWS Lambda, how you configure
 what is dockerfile 
