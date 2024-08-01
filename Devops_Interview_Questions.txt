@@ -1,3 +1,17 @@
+Loyalty Methods Devops Interview
+----------------
+which services you used in AWS
+What is AWS ECS and EKS 
+how to use cloudformation templates 
+what is cloudformation template stack policies
+can you explain about AWS Lambda, how you configure
+what is dockerfile 
+how you can write dockerfile and docker compose explain the process
+explain volumes in dockerfile
+which logging tools have you used
+which python modules have you used till now
+using boto3 how you write python code explain
+
 Impact analytics DevOps Interview
 --------------------------------------
 what is diff b/w NAT gateway and Internet gateway
