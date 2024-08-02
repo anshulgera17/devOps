@@ -1,3 +1,13 @@
+Paytm DevOps Interview
+---------------------
+what is load average in linux
+top command what you see in first line
+what parameters be have to consider while writing dockerfile
+what is difference b/w CMD and ENTRYPOINT
+write code for string palindrome in any language
+how you make sure that jenkins master is highly available
+
+
 Loyalty Methods Devops Interview
 ----------------
 which services you used in AWS
