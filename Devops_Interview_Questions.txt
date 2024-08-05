@@ -1,3 +1,19 @@
+Virtusa interview for DevOps
+----------------------------
+what is diff b/w git rebase and git merge
+what is diff b/w git pull and git fetch
+what is git branching strategy
+explain how you used git in your company with commands step by step
+do you have experience in dockerfile writing, explain each component of dockerfile and commands you used.
+if we do any changes in docker container how can it be keep in our docker new image.
+which services you used in AWS
+how you write kubernetes yaml files 
+how we can save the important username and password in kubernetes, in which file you have to keep them.
+what is config map in kubernetes.
+how many ci-cd tools you used till now, is each ci having different cd or 1 cd.
+how many environments you are supporting in ci-cd
+
+
 Paytm DevOps Interview
 ---------------------
 what is load average in linux
