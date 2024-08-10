@@ -13,6 +13,7 @@
 ## EC2 (Elastic Compute Cloud)
 - What is Amazon EC2?
 - Explanation of EC2 as a service that provides resizable compute capacity in the cloud.
+- lsblk, sudo growpart /dev/xvda1, sudo xfs_growfs -d /
 - How do you create and launch an EC2 instance?
 - Steps involved in creating and launching an EC2 instance using the AWS Management Console or CLI.
 - What are the different instance types in EC2?
