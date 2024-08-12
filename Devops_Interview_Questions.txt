@@ -1,3 +1,23 @@
+Clovertex DevOps Interview
+--------------------------
+which services you used
+what is NACL rules
+what is security group
+diff between NACL and security group in AWS
+what is VPC 
+what is subnet and its types, where we use private subnet
+what is NAT gateway, what is diff between NAT and internet gateway
+if i want to give access s3 object from ec2 instance what we have to do
+what is IAM roles
+what is IAM policies
+what you used from kubernetes
+what is deamonset
+what is pod 
+what is namespaces
+how you wrote jenkinsfiles
+tell me structure of declarative jenkinsfile vs scripted jenkinsfile and diff b/w them
+if i want to send email after job completed or failed, how can i do that
+
 Virtusa interview for DevOps
 ----------------------------
 what is diff b/w git rebase and git merge
