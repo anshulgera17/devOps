@@ -1,3 +1,29 @@
+TCS cloud interview
+-------------------
+how you do deployment in kubernetes
+how can be do auto scaling in kubernetes
+if we want to reduce container how you which file you have to modify
+how you write the ci-cd pipeline in your project
+do you have any cloud certifications or redhat certifications
+how do you deploy in you project
+
+Virtusa 2nd Round Interview by Citi client
+---------------------------------------
+how you do autoscaling in kubernetes
+can you explain the ci-cd declarative pipeline you worked on.
+how you use maven and apache tomcat
+in apache tomcat where to mention the port 
+what is pom.xml
+do you know about maven structure
+for find some file in linux environment with specific size which command will you use
+for ignore error what you from linux find command
+how you replace the linux keywords with you name in oneline in linux
+how you write the parameters in jenkins
+how you are generation builds which build tools you used
+in redhat how you uninstall a package or delete a library
+what is git squash
+
+
 Clovertex DevOps Interview
 --------------------------
 which services you used
