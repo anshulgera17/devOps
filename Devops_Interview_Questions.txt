@@ -1,3 +1,14 @@
+Equinix DevOps Interview
+----------------------------
+what you did in git in your organization
+which git tool you are using
+what we have to do when creating new git repository as admin
+write a shell script for filter the processes with username having apache
+write a python code for parsing the log file which is having error
+write ansible file for create user and setup jenkins
+how you use ansible in you company
+how you use jenkins in your company
+
 TCS cloud interview
 -------------------
 how you do deployment in kubernetes
