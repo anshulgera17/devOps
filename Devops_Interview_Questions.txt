@@ -6,7 +6,7 @@ if any merge conflict or how merge conflict generates
 what is NACL vs security group
 what is $? in linux
 what is $# in linux
-write code for get the unique values from a list
+write code for get the unique values from a list [1,1,2,2,3,3,4,4]
 what is dictinary in python
 what is mutable and immutable in python
 which logging tool you used, how you used prometheus and grafana
