@@ -1,3 +1,16 @@
+Carelon DevOps Interview
+---------------------------
+how you use git branching in your company
+if any developer works on tasks how they use git 
+if any merge conflict or how merge conflict generates
+what is NACL vs security group
+what is $? in linux
+what is $# in linux
+write code for get the unique values from a list
+what is dictinary in python
+what is mutable and immutable in python
+which logging tool you used, how you used prometheus and grafana
+
 Equinix DevOps Interview
 ----------------------------
 what you did in git in your organization
