@@ -1,3 +1,19 @@
+Altrimetrik DevOps(Ansible/terraform) Interview
+------------------------------------------------
+what is git rebase
+if you found an issue while git push during staging, how will you resolve it.
+if you have git merge conflict how will you resolve it.
+can you write Ansible playbook for debug any message
+which modules you used or where you used ansible till now.
+do you know about ansible roles, how to create them and using them.
+how you used python in your projects which libraries you used
+what is python decorators
+how you used boto3 library of python in aws
+which services you used in AWS
+do you have experience with terraform, can you explain what you did.
+shared 2 kubernetes yaml files for debug and check it is having any error/issue.
+
+
 Carelon DevOps Interview
 ---------------------------
 how you use git branching in your company
