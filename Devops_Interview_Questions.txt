@@ -1,3 +1,19 @@
+Altimetrik 2nd Round Interview
+-----------------------------------
+which modules you used in python
+write some code with os module
+write code for move files from one directory to another using python
+diff between list, tuple, dictionary, set
+what is shell in linux
+what is shebang line in linux
+what is diff between terminal and shell
+what is && and || in shell 
+what is jenkins explain jenkins pipeline and ci-cd 
+what is grep in linux
+what is diff between $ and $$
+how to write comment in shell script
+
+
 Altimetrik DevOps(Ansible/terraform) Interview
 ------------------------------------------------
 what is git rebase
