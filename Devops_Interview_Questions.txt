@@ -1,3 +1,15 @@
+K12/orchid school interview
+-----------------------------
+what is diff b/w RUN, CMD, ENTRYPOINT
+what is CI-CD
+what are diff b/w continuous Integration, continueos delivery and continueous deployment
+what is networking of an application from you laptop to kubernetes what happens in terms of networking
+what is service in kubernetes and service types
+how to write dockerfile in standard or best way
+what is multistage dockerfile
+explain how i can use database username password to keep them in AWS secrets file and how to call them in django application or use kubernetes for secrets
+
+
 Altimetrik 2nd Round Interview
 -----------------------------------
 which modules you used in python
