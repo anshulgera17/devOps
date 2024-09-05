@@ -1,3 +1,14 @@
+UST Global DevOps(AWS/ Terraform) Interview
+-------------------------------------------
+which AWS services you used 
+what is subnet, why we are creating subnet
+what is aws s3, types of objects
+how we can implement aws s3 objects security
+have you write lambda functions in python
+what is terrraform
+if someone deleted ec2 instance manually from terminal how you manage that in terraform
+how you handle secrets in terraform
+
 BNY Mellon (Altrimetrik client) interview
 ---------------------------------------------
 explain about your exp and edu background
