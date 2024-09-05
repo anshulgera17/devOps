@@ -7,6 +7,7 @@ what is aws s3, types of objects
 what is diff b/w EBS and S3 
 how we can implement aws s3 objects security
 have you write lambda functions in python
+what is lambda time saving 
 what is terrraform
 if someone deleted ec2 instance manually from terminal how you manage that in terraform
 how you handle secrets in terraform
