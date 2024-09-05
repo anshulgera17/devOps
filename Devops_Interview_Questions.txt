@@ -1,3 +1,20 @@
+BNY Mellon (Altrimetrik client) interview
+---------------------------------------------
+explain about your exp and edu background
+what is ci-cd and how you use in your exp
+how you handle failure in ci-cd, or post action what you did
+how you use ansible in your exp
+how you can manage multiple tasks in ansible inside roles
+how you use terraform in your exp
+how you use azure cloud in your exp
+which services you use in AWS explain in detail
+how you use python in your exp
+what is diff b/w list, tuple, dictionary
+how you can do list comprihension in python
+what is decorator in python
+how you use RDBMS in your exp
+
+
 K12/orchid school interview
 -----------------------------
 what is diff b/w RUN, CMD, ENTRYPOINT
