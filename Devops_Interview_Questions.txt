@@ -3,6 +3,7 @@ BNY Mellon (Altrimetrik client) interview
 explain about your exp and edu background
 what is ci-cd and how you use in your exp
 how you handle failure in ci-cd, or post action what you did
+why we are having multiple stage in jenkins, explain build, test, deploy stage
 how you use ansible in your exp
 how you can manage multiple tasks in ansible inside roles
 how you use terraform in your exp
