@@ -3,7 +3,7 @@ K12/orchid school interview
 what is diff b/w RUN, CMD, ENTRYPOINT
 what is CI-CD
 what are diff b/w continuous Integration, continueos delivery and continueous deployment
-what is networking of an application from you laptop to kubernetes what happens in terms of networking
+what is networking of an application from you laptop to kubernetes what happens in terms of networking inside k8's
 what is service in kubernetes and service types
 how to write dockerfile in standard or best way
 what is multistage dockerfile
