@@ -1,5 +1,6 @@
 UST Global DevOps(AWS/ Terraform) Interview
 -------------------------------------------
+tell me about yourself in a minute other then your professional exp
 which AWS services you used 
 what is subnet, why we are creating subnet
 what is aws s3, types of objects
