@@ -4,6 +4,7 @@ tell me about yourself in a minute other then your professional exp
 which AWS services you used 
 what is subnet, why we are creating subnet
 what is aws s3, types of objects
+what is diff b/w EBS and S3 
 how we can implement aws s3 objects security
 have you write lambda functions in python
 what is terrraform
