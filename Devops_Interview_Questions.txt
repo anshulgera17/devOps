@@ -1,3 +1,13 @@
+ValueMomentum DevOps Interview
+------------------------------------
+which aws services you used
+what is diff b/w ECS and EC2
+how you use ALB in your project
+what is layer 7 in ALB and http request 
+write terraform file for create ec2 instance, having access from port 22 only
+write terraform file and call variable from terraform.tfvars file
+if we are facing error for connecting ec2 instance via ssh, how will you resolve it
+
 UST Global DevOps(AWS/ Terraform) Interview
 -------------------------------------------
 tell me about yourself in a minute other then your professional exp
